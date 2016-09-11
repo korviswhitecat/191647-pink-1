@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ольга Чернышева](https://up.htmlacademy.ru/adaptive/8/user/191647).
-* Наставник: `Неизвестно`.
+* Наставник: [HTML Academy](https://htmlacademy.ru).
 
 ---
 
