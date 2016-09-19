@@ -1,0 +1,143 @@
+.main-nav {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: $font-family;
+  text-transform: uppercase;
+  text-align: center;
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.main-nav__toggle {
+  float: right;
+  @include inline-block-top;
+  margin-right: 20px;
+  width: 50px;
+  height: 25px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background: url("../img/icon-menu-burger.svg") no-repeat right;
+  background-size: 90%;
+  outline: none;
+}
+
+.main-nav--opened {
+  @include inline-block-top;
+  width: 50px;
+  height: 25px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background: url("../img/icon-menu-cross.svg") no-repeat center;
+  display: none;
+}
+
+.main-nav__list li {
+  background: $dark-bg-color;
+}
+
+.main-nav__current,
+.main-nav__item {
+  box-shadow: 0 1px 0 0 #000000;
+  margin-bottom: 1px;
+  min-height: 60px;
+}
+
+.main-nav__item:first-child {
+ box-shadow: 0 1px 0 0 #000000, 0 -1px 0 0 #000000;
+
+}
+
+.main-nav__current a,
+.main-nav__item a {
+  color: #ffffff;
+  text-decoration: none;
+  @include inline-block-top;
+  padding-top: 16px;
+  padding-bottom: 15px;
+}
+
+.pink-logo-path {
+  fill: red !important;
+}
+
+
+
+
+@media (min-width: $desktop-widths) {
+
+  .main-nav {
+    margin-left: auto;
+
+    &__current,
+    &__item {
+      @include inline-block-top;
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-bottom: 0;
+      box-shadow: none;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 90px;
+      min-height: 110px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__current a,
+    &__item a {
+      text-transform: none;
+      font-weight: 300;
+    }
+
+    &__current a,
+    &__item a {
+      color: #ffffff;
+      text-decoration: none;
+      @include inline-block-top;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    &__item a:hover {
+      color: #ffffff;
+      border-bottom: 2px solid #ffffff;
+      padding-bottom: 13px;
+    }
+
+    &__current a:active,
+    &__item a:active {
+      color: rgba(255, 255, 255, 0.3);
+      padding-bottom: 15px;
+      border-bottom: transparent;
+    }
+
+    &__current a:hover {
+      color: #d22856;
+      border-bottom: 2px solid #d22856;
+      padding-bottom: 13px;
+    }
+
+    &__list li {
+      background: transparent;
+    }
+  }
+
+
+}

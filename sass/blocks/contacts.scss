@@ -1,0 +1,95 @@
+.contacts {
+  font-family: $font-family;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contacts__wrapper {
+  padding-top: $default-padding;
+  padding-bottom: $default-padding;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+}
+
+.contacts__title {
+  font-size: 24px;
+  font-weight: 300;
+  padding-top: $default-padding;
+  padding-bottom: $default-padding;
+}
+
+.contacts__options {
+  margin-top: 7px;
+  margin-bottom: 20px;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+}
+
+.contacts__options a,
+.contats__options-descr {
+  font-size: 24px;
+  font-weight: 300;
+  color: $decoration-font-color;
+}
+
+.contacts__options a {
+  @include block;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+.contacts__options a:hover {
+  color: $basic-font-color;
+  text-decoration: underline;
+}
+
+.contacts__options a:active {
+  color: lighten($basic-font-color, 50%);
+  text-decoration: none;
+}
+
+.contats__options-title {
+  display: block;
+  vertical-align: baseline;
+  color:  #283645;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.contacts__map {
+  height: 200px;
+  width: 100%;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat center;
+  font-size: 0;
+}
+
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .contacts__title {
+    font-size: 40px;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+  .contacts__options {
+    @include block;
+    width: 220px;
+  }
+  .contacts__map {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .contacts__title {
+    font-size: 50px;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+  .contacts__options {
+    @include block;
+    width: 220px;
+  }
+  .contacts__map {
+    width: 100%;
+  }
+}

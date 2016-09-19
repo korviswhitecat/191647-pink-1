@@ -1,0 +1,34 @@
+.gallery {
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+  font-weight: 400;
+  font-family: $font-family;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 50px;
+  }
+}
+
+
+@media (min-width: $desktop-widths) {
+  .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  padding-left: 130px;
+  padding-right: 130px;
+  }
+}
