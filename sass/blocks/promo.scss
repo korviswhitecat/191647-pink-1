@@ -1,0 +1,42 @@
+.promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: $default-padding;
+  padding-right: $default-padding;
+  padding-bottom: $default-padding;
+  padding-left: $default-padding;
+  &__descr {
+    padding-top: 10px;
+    padding-right: $default-padding;
+    padding-left: $default-padding;
+    padding-bottom: 15px;
+    font-size: $basic-font-size;
+    line-height: 30px;
+    font-family: $font-family;
+    text-align: center;
+    color: $basic-font-color;
+    background-color: $main-bg-color;
+  }
+}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .promo__descr {
+    padding-top: 55px;
+    padding-right: 110px;
+    padding-bottom: 38px;
+    padding-left: 110px;
+    font-size: $basic-tablet-font-size;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .promo__descr {
+    padding-top: 52px;
+    padding-right: 280px;
+    padding-bottom: 52px;
+    padding-left: 280px;
+    font-size: $basic-desktop-font-size;
+  }
+}

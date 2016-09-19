@@ -1,0 +1,54 @@
+.advertisement {
+  padding-top: 17px;
+  padding-bottom: 40px;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+  box-sizing: border-box;
+  background-color: $main-bg-color;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: $font-family;
+  text-align: center;
+  & p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .advertisement {
+    box-sizing: border-box;
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    & p {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    & p:nth-child(n+2) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-widths) {
+
+  .advertisement p {
+    padding: 0;
+    margin: 0;
+  }
+  .advertisement {
+    font-size: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 100px;
+    padding-left: 100px;
+    height: 160px;
+  }
+}

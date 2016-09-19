@@ -1,0 +1,39 @@
+.pseudo-science {
+  color: $basic-font-color;
+  padding-top: $default-padding;
+  padding-right: $default-padding;
+  padding-bottom: $default-padding;
+  background-color: $main-bg-color;
+  box-sizing: border-box;
+  font-size: $basic-font-size;
+  line-height: 24px;
+  text-align: left;
+  font-family: $font-family;
+  display: none;
+  &__title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-top: 75px;
+    margin-bottom: 10px;
+    padding-right: 150px;
+  }
+  &__link {
+    @include inline-block-top;
+    margin-top: 7px;
+    color: $decoration-font-color;
+  }
+}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .pseudo-science {
+    display: block;
+    padding-left: 340px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .pseudo-science {
+    display: block;
+  }
+}

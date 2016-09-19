@@ -1,0 +1,137 @@
+.user-photo {
+  margin-bottom: 20px;
+  font-size: 0;
+  text-align: left;
+  font-weight: normal;
+  font-family: $font-family;
+  background-color: #f2f2f2;
+
+  &__info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: $default-padding;
+    padding-bottom: $default-padding;
+    padding-left: $default-padding;
+    padding-right: $default-padding;
+    box-sizing: border-box;
+  }
+
+  &__name {
+    font-size: $basic-font-size;
+    font-weight: 700;
+  }
+
+  &__time {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-left: 3px;
+  }
+
+  &__comment {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: $basic-font-size;
+    line-height: 24px;
+    min-width: 200px;
+  }
+
+  &__likes {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #d22856;
+    position: relative;
+  }
+
+  &__likes::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 0;
+    background-image: url("../img/icon-heart.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+
+  & img {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .user-photo {
+    display: inline-flex;
+    width: 300px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: stretch;
+
+    &__likes {
+      margin-top: auto;
+      padding-left: 0;
+      position: relative;
+    }
+
+    &__likes::before {
+      top: 5px;
+      left: 225px;
+    }
+
+    &__info-wrapper {
+      padding-top: 30px;
+      padding-left: 30px;
+    }
+
+    &__comment {
+      min-height: 50px;
+    }
+
+    & img {
+      min-height: 300px;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-widths) {
+  .user-photo {
+    display: inline-flex;
+    width: 300px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: stretch;
+    margin-bottom: 55px;
+
+    &__likes {
+      margin-top: auto;
+      padding-left: 0;
+      position: relative;
+    }
+
+    &__likes::before {
+      top: 5px;
+      left: 230px;
+    }
+
+    &__info-wrapper {
+      padding-top: 25px;
+      padding-left: 30px;
+    }
+
+    &__comment {
+      min-height: 50px;
+    }
+    & img {
+      min-height: 400px;
+    }
+  }
+}

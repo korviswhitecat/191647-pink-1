@@ -1,0 +1,12 @@
+.social-networks {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (min-width: $desktop-widths) {
+  .social-networks {
+    padding-left: 15px;
+  }
+}

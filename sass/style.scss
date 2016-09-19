@@ -1,0 +1,36 @@
+@import "normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+/*главная*/
+@import "blocks/download-offer.scss";
+@import "blocks/advertisement.scss";
+@import "blocks/features.scss";
+@import "blocks/pseudo-science.scss";
+@import "blocks/feedback.scss";
+@import "blocks/price.scss";
+@import "blocks/contacts.scss";
+
+/*фото*/
+@import "blocks/promo.scss";
+@import "blocks/gallery.scss";
+@import "blocks/upload.scss";
+@import "blocks/upload-promo.scss";
+@import "blocks/upload-button.scss";
+@import "blocks/user-photo.scss";
+@import "blocks/user-photo-daily.scss";
+
+/*форма*/
+@import "blocks/contest-form.scss";
+@import "blocks/contest.scss";
+
+
+/*общее*/
+@import "global.scss";
+@import "fonts.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/main-footer-logo.scss";
+@import "blocks/social-link.scss";
+@import "blocks/social-networks.scss";

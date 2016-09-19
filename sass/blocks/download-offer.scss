@@ -1,0 +1,130 @@
+.download-offer {
+  font-family: $font-family;
+  padding-top: $default-padding + 8px;
+  padding-bottom: $default-padding;
+  box-sizing: border-box;
+  background-color: $dark-bg-color;
+  text-align: center;
+
+  &__link {
+    @include inline-block-top;
+    vertical-align: baseline;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: $dark-bg-color;
+    cursor: pointer;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+  }
+
+  &__link:hover {
+    color: $decoration-font-color;
+    background-color: #ffffff;
+  }
+
+  &__link:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+
+  &__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+  }
+
+  &__wrapper p {
+    margin-top: 23px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: $basic-font-size;
+    line-height: 24px;
+  }
+
+  &__option {
+    @include inline-block-top;
+    vertical-align: bottom;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 28px;
+    width: 50px;
+    height: 60px;
+    font-size: 0;
+  }
+
+  &__option--ios {
+    background: url("../img/logo-apple.svg") no-repeat bottom;
+  }
+
+  &__option--android {
+    background: url("../img/logo-android.svg") no-repeat bottom;
+  }
+
+  &__option--windows {
+    background: url("../img/logo-microsoft.svg") no-repeat bottom;
+  }
+
+  &__img {
+    position: absolute;
+    width: 260px;
+    height: 290px;
+    top: -314px;
+    left: 0;
+    background: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
+}
+.download-offer  .container {
+  box-sizing: border-box;
+}
+
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+
+  .download-offer {
+    background: transparent;
+    margin-left: 40px;
+
+    &__option--android {
+      background: url("../img/logo-android.svg") no-repeat bottom;
+      opacity: 0.4;
+    }
+  }
+
+  .download-offer__wrapper {
+    width: 345px;
+    box-sizing: border-box;
+  }
+  .download-offer__link {
+    background: transparent;
+  }
+
+  .download-offer__img {
+    position: absolute;
+    width: 470px;
+    height: 550px;
+    top: -150px;
+    left: 100px;
+    background: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+
+}
+
+@media (min-width: $desktop-widths) {
+  /*
+  .download-offer {
+    width: 300px;
+    position: absolute;
+    top: 400px;
+    left: 100px;
+  }*/
+}

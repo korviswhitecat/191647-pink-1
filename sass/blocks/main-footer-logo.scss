@@ -1,0 +1,23 @@
+.main-footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+
+  .main-footer-logo {
+    padding-top: 0;
+  }
+}
+
+
+@media (min-width: $desktop-widths) {
+
+  .main-footer-logo {
+    padding-top: 0;
+  }
+}

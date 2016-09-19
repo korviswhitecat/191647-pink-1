@@ -1,0 +1,1011 @@
+.contest-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $basic-font-color;
+  font-size: $basic-font-size;
+  font-weight: 400;
+  font-family: $font-family;
+  background-color: $main-bg-color;
+  margin-bottom: 45px;
+
+  &__user-details {
+    padding-top: $default-padding;
+    padding-bottom: $default-padding;
+    padding-left: $default-padding;
+    padding-right: $default-padding;
+    box-sizing: border-box;
+  }
+
+  &__user-achievements {
+    padding-top: 37px;
+    padding-bottom: 18px;
+    padding-left: 56px;
+    padding-right: $default-padding;
+    box-sizing: border-box;
+  }
+
+  &__achievements-title {
+    padding-left: $default-padding;
+    padding-right: 60px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+  }
+
+  &__user-achievements li {
+    margin-bottom: 28px;
+  }
+
+  &__user-contacts {
+    padding-top: 35px;
+    padding-left: $default-padding;
+    padding-right: $default-padding;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+
+  &__os-checker {
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
+
+  &__os-checker  .container {
+    padding-left: 20px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+
+
+  &__os-checker label {
+   margin-top: 25px;
+  }
+
+  &__os-checker label:nth-child(2) {
+   margin-top: 22px;
+  }
+
+  &__os-title {
+    margin-left: 10px;
+  }
+
+  &__user-review  {
+    padding-top: 55px;
+    padding-bottom: $default-padding;
+    padding-left: $default-padding;
+    padding-right: $default-padding;
+    box-sizing: border-box;
+  }
+
+  &__legend {
+    color: $decoration-font-color;
+    @include inline-block-top;
+    font-size: $legend-font-size;
+    padding-left: 22px;
+    text-transform: uppercase;
+  }
+
+  &__user-review {
+    text-align: center;
+  }
+
+  &__user-contacts-legend,
+  &__review-title,
+  &__os-title,
+  &__legend,
+  &__achievements-title {
+    color: $decoration-font-color;
+    font-size: $legend-font-size;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__user-contacts-legend {
+    display: none;
+  }
+
+  & input[type="email"],
+  & input[type="text"],
+  & input[type="tel"] {
+    color: $basic-font-color;
+    font-size: $form-options-font-size;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: $font-family;
+    border: $field-border;
+    border-radius: $field-border-radius;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 22px;
+    padding-right: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  & input[type="text"] {
+    margin-top: 7px;
+  }
+
+  & input[type="text"]:last-child {
+    margin-top: 13px;
+  }
+
+  & input[type="tel"] {
+    margin-top: 10px;
+  }
+
+  & input[type="email"] {
+    margin-top: 9px;
+  }
+
+  & input[type="email"]:hover,
+  & input[type="text"]:hover,
+  &m input[type="tel"]:hover,
+  & textarea[name="review"]:hover {
+    border: $field-hover-border;
+  }
+
+  & input[type="email"]:focus,
+  & input[type="text"]:focus,
+  & input[type="tel"]:focus,
+  & textarea[name="review"]:focus {
+    border: $field-active-border;
+  }
+
+  & input[type="email"],
+  & input[type="text"],
+  & input[type="tel"] {
+    color: $basic-font-color;
+    font-size: $form-options-font-size;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: $font-family;
+    border: $field-border;
+    border-radius: $field-border-radius;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 22px;
+    padding-right: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  & input[type="text"] {
+    margin-top: 7px;
+  }
+
+  & input[type="text"]:last-child {
+    margin-top: 13px;
+  }
+
+  & input[type="tel"] {
+    margin-top: 10px;
+  }
+
+  & input[type="email"] {
+    margin-top: 9px;
+  }
+
+  & input[type="email"]:hover,
+  & input[type="text"]:hover,
+  & input[type="tel"]:hover,
+  & textarea[name="review"]:hover {
+    border: $field-hover-border;
+  }
+
+  & input[type="email"]:focus,
+  & input[type="text"]:focus,
+  & input[type="tel"]:focus,
+  & textarea[name="review"]:focus {
+    border: $field-active-border;
+  }
+
+  & input::-webkit-input-placeholder {
+    color: $basic-font-color;
+    font-size: $form-options-font-size;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: $font-family;
+  }
+
+  & input:-moz-placeholder {
+    color: $basic-font-color;
+    font-size: $form-options-font-size;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: $font-family;
+  }
+
+  & textarea[name="review"] {
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    min-height: 200px;
+    border: $field-border;
+    border-radius: $field-border-radius;
+    padding-top: 15px;
+    padding-bottom: $default-padding;
+    padding-left: 15px;
+    padding-right: $default-padding;
+    color: $basic-font-color;
+    font-size: $form-options-font-size;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: $font-family;
+    text-align: center;
+    outline: none;
+  }
+
+  & textarea::-webkit-input-placeholder {
+    color: $basic-font-color;
+    font-size: $form-options-font-size;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: $font-family;
+    text-align: center;
+  }
+
+  & textarea:-moz-placeholder {
+    color: $basic-font-color;
+    font-size: $form-options-font-size;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: $font-family;
+    text-align: center;
+  }
+
+  &__user-achievements label,
+  &__os-checker label {
+    @include inline-block-top;
+    vertical-align: baseline;
+  	position: relative;
+  	cursor: pointer;
+    padding-left: 70px;
+    font-size: $form-options-font-size;
+  }
+
+  &__os-checker label::before {
+  	content: "";
+  	position: absolute;
+  	left: 0;
+    top: -8px;
+  	width: 35px;
+  	height: 35px;
+    background: $main-bg-color;
+  	border: $field-border;
+    border-radius: 50%;
+  }
+
+  &__user-achievements label::before {
+  	content: "";
+  	position: absolute;
+  	left: 0;
+    top: -8px;
+  	width: 35px;
+  	height: 35px;
+    background: $main-bg-color;
+  	border: $field-border;
+    border-radius: $field-border-radius;
+  }
+
+  &__user-achievements label:hover::before,
+  &__os-checker label:hover::before {
+    border: $field-hover-border;
+  }
+
+  &__user-achievements label:active::before,
+  &__os-checker label:active::before {
+    border: $field-active-border;
+  }
+
+  &__os-checker input[type="radio"]:checked + label::after {
+  	content: "";
+  	position: absolute;
+  	top: 4px;
+  	left: 12px;
+  	width: 15px;
+  	height: 15px;
+  	background-color: $decoration-font-color;
+    border-radius: 50%;
+  }
+
+  &__user-achievements input[type="checkbox"]:checked + label::after {
+  	content: "";
+  	position: absolute;
+  	top: 4px;
+  	left: 12px;
+  	width: 15px;
+  	height: 15px;
+  	background-color: $decoration-font-color;
+    background: url("../img/icon-yes.svg") no-repeat center;
+  }
+
+  &__user-achievements input,
+  &__os-checker input {
+    display: none;
+  }
+
+  &__os-checker,
+  &__user-achievements {
+    background-color: $extra-bg-color;
+  }
+
+  &__user-achievements ul,
+  &__os-checker ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+  }
+
+  &__user-achievements li,
+  &__os-checker li {
+    font-size: $basic-font-size;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  &__submit-form {
+    padding-left: $default-padding;
+    padding-right: $default-padding;
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+    color: #ffffff;
+    background-color: #2aab6d;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: $font-family;
+    font-size: 18px;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__button:active {
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
+
+  &__button--progress {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &__button--progress:hover {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &__button--disabled {
+    background-color: #e5e5e5;
+    cursor: none;
+    pointer-events: none;
+  }
+
+  &__warning {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  &__warning b {
+    color: $decoration-font-color;
+  }
+
+  &__warning--desktop,
+  &__legend--not-mobile {
+    display: none;
+  }
+}
+
+fieldset,
+legend {
+  @include inline-block-top;
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .contest-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__user-details {
+      order: -5;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 5px;
+      padding-right: 40px;
+      box-sizing: border-box;
+    }
+
+    &__user-details input[type="text"] {
+      box-sizing: border-box;
+      width: 565px;
+      margin-bottom: 35px;
+    }
+
+    &__user-details input[type="text"]:nth-child(2) {
+      margin-bottom: 47px;
+      width: 525px;
+    }
+
+    &__user-details input[type="text"]:nth-child(6) {
+      margin-bottom: 10px;
+      width: 525px;
+    }
+
+    &__user-details label {
+      margin-bottom: 35px;
+    }
+
+    &__user-details label:nth-child(5) {
+      margin-bottom: 5px;
+    }
+
+    &__os-checker {
+      order: -4;
+      margin-top: 20px;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 45px;
+      box-sizing: border-box;
+      background-color: $main-bg-color;
+    }
+
+    &__os-checker legend {
+      display: block;
+      width: 366px;
+    }
+
+    &__user-review fieldset,
+    &__user-achievements fieldset,
+    &__user-contacts fieldset,
+    &__os-checker fieldset {
+      border: $field-border;
+    }
+
+    &__os-checker ul {
+      margin-top: 10px;
+      margin-left: 60px;
+      margin-bottom: 50px;
+    }
+
+    &__os-item {
+      padding-left: 45px;
+    }
+
+    &__user-contacts-legend {
+      display: block;
+      width: 260px;
+    }
+
+    &__user-contacts {
+      order: -3;
+      margin-top: 22px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    &__user-contacts fieldset {
+      padding-left: 55px;
+      padding-right: 55px;
+      padding-bottom: 30px;
+    }
+
+    &__user-contacts-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-top: 37px;
+    }
+
+    &__legend--mobile {
+      display: none;
+    }
+
+    &__legend--not-mobile {
+      display: inline;
+    }
+
+    &__user-achievements {
+      background-color: $main-bg-color;
+      padding-top: 25px;
+    }
+
+    &__achievements-item {
+      padding-left: 50px;
+    }
+
+    &__user-review {
+      padding-top: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    &__submit-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 40px;
+      margin-top: 50px;
+      margin-bottom: 25px;
+      box-sizing: border-box;
+    }
+    &__warning {
+      padding: 0;
+    }
+
+    &__submit-form {
+      width: 300px;
+    }
+  }
+
+  .contest-form__user-contacts-wrapper .contest-form__field:nth-child(2) {
+    order: -4;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .contest-form__user-contacts-wrapper .contest-form__legend:nth-child(1) {
+    order: -3;
+    margin: 0;
+    text-align: left;
+    margin-bottom: 33px;
+  }
+
+  .contest-form__os-checker  .container {
+    padding-right: 60px;
+  }
+
+  .contest-form__user-contacts-wrapper .contest-form__legend:nth-child(3) {
+    margin: 0;
+    text-align: left;
+    margin-top: 15px;
+  }
+
+  .contest-form__user-contacts-wrapper .contest-form__field:nth-child(4) {
+    order: -2;
+    margin: 0;
+  }
+
+  .contest-form__user-achievements  .container {
+    box-sizing: border-box;
+    padding-right: 60px;
+    padding-left: 20px;
+  }
+
+  .contest-form__user-achievements legend {
+    display: block;
+    padding: 0;
+    width: 430px;
+  }
+
+  .contest-form__user-achievements fieldset {
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-bottom: 15px;
+  }
+
+  .contest-form__user-review legend {
+    display: block;
+    padding: 0;
+    width: 260px;
+  }
+
+  .contest-form__user-review fieldset {
+    padding-left:  60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .contest-form textarea[name="review"] {
+    min-height: 193px;
+  }
+}
+
+
+@media (min-width: $desktop-widths) {
+  .contest-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+    margin-bottom: 0;
+
+    &__user-details {
+      order: -5;
+      margin-top: 30px;
+      margin-left: 130px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 5px;
+      padding-right: 0;
+      width: 470px;
+      box-sizing: border-box;
+    }
+
+    &__user-details input[type="text"] {
+      box-sizing: border-box;
+      width: 380px;
+      margin-bottom: 35px;
+    }
+
+    &__user-details input[type="text"]:nth-child(2) {
+      margin-bottom: 45px;
+      width: 340px;
+    }
+
+    &__user-details input[type="text"]:nth-child(6) {
+      margin-bottom: 30px;
+      width: 340px;
+    }
+
+    &__user-details label {
+      margin-bottom: 35px;
+    }
+
+    &__user-details label:nth-child(5) {
+      margin-bottom: 18px;
+    }
+  }
+
+  .contest-form__user-review fieldset,
+  .contest-form__user-achievements fieldset,
+  .contest-form__user-contacts fieldset,
+  .contest-form__os-checker fieldset {
+    border: $field-border;
+  }
+
+  .contest-form__os-checker legend {
+    display: block;
+    width: 366px;
+  }
+
+  .contest-form__os-checker {
+    order: -4;
+    margin: 0;
+    margin-top: 30px;
+    margin-right: 155px;
+    padding:  0;
+    box-sizing: border-box;
+    background-color: $main-bg-color;
+  }
+
+  .contest-form__os-checker  .container {
+    width: 440px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contest-form__os-checker  ul {
+    margin-top: 10px;
+    margin-left: 75px;
+    margin-bottom: 50px;
+  }
+
+  .contest-form__user-contacts {
+    order: -3;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+    padding-left: 42px;
+    padding-right: 42px;
+    box-sizing: border-box;
+  }
+
+  .contest-form__user-contacts-legend {
+    display: block;
+    width: 260px;
+  }
+
+  .contest-form__legend--mobile {
+    display: none;
+  }
+
+  .contest-form__legend--not-mobile {
+    display: inline;
+  }
+
+  .contest-form__user-contacts fieldset {
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    width: 940px;
+    margin-left: 90px;
+  }
+
+  .contest-form__user-contacts-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 31px;
+  }
+
+  .contest-form__user-contacts-wrapper .contest-form__field:nth-child(2) {
+    order: -4;
+    margin: 0;
+    width: 370px;
+  }
+
+  .contest-form__user-contacts-wrapper .contest-form__legend:nth-child(1) {
+    order: -2;
+    margin: 0;
+    text-align: left;
+    padding-left: 25px;
+    margin-top: 13px;
+    width: 300px;
+  }
+
+  .contest-form__user-contacts-wrapper .contest-form__legend:nth-child(3) {
+    order: -1;
+    margin: 0;
+    text-align: left;
+    margin-top: 13px;
+    width: 355px;
+  }
+
+  .contest-form__user-contacts-wrapper .contest-form__field:nth-child(4) {
+    order: -3;
+    margin: 0;
+    width: 370px;
+  }
+
+  .contest-form__user-achievements legend {
+    display: block;
+    padding: 0;
+    width: 430px;
+  }
+
+  .contest-form__user-achievements fieldset {
+     padding-bottom: 25px;
+  }
+
+  .contest-form__user-achievements {
+    background-color: $main-bg-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1015px;
+    box-sizing: border-box;
+    margin-left: 110px;
+    margin-top: 20px;
+  }
+
+  .contest-form__user-achievements ul {
+    margin-left: 55px;
+    margin-top: 5px;
+  }
+
+  .contest-form__user-achievements li {
+    display: inline-block;
+    width: 280px;
+  }
+
+  .contest-form__user-review legend {
+    display: block;
+    padding: 0;
+    width: 260px;
+  }
+
+  .contest-form__user-review {
+    padding-top: 40px;
+    width: 980px;
+    box-sizing: border-box;
+  }
+
+  .contest-form__user-review fieldset {
+    padding-top: 18px;
+    padding-left: 60px;
+    padding-right: 55px;
+    padding-bottom: 18px;
+  }
+
+  .contest-form textarea::-webkit-input-placeholder {
+    text-align: left;
+  }
+
+  .contest-form textarea:-moz-placeholder {
+    text-align: left;
+  }
+
+  .contest-form textarea[name="review"] {
+    min-height: 125px;
+    resize: vertical;
+  }
+
+  .contest-form__submit-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 110px;
+    padding-right: 130px;
+    margin-top: 43px;
+    box-sizing: border-box;
+  }
+
+  .contest-form__warning--desktop {
+    display: inline;
+  }
+  .contest-form__warning {
+    padding: 0;
+  }
+
+  .contest-form__submit-form {
+    width: 300px;
+  }
+
+
+    /*
+    & fieldset {
+      border: $field-border;
+    }
+    & fieldset,
+    & legend {
+      margin: 0;
+    }
+    &__user-details {
+      order: -5;
+      margin-left: 110px;
+      width: 475px;
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 0;
+    }
+    &__user-details input[type="text"]:nth-child(2),
+    &__user-details input[type="text"]:nth-child(6) {
+      width: 340px;
+      box-sizing: border-box;
+    }
+    &__user-details input[type="text"] {
+      margin-bottom: 45px;
+    }
+    &__os-checker {
+      order: -4;
+      margin-top: 14px;
+      margin-right: 110px;
+      padding-top: 0;
+      padding-bottom: 0;
+      width: 436px;
+      box-sizing: border-box;
+      background-color: $main-bg-color;
+    }
+    &__os-item {
+      margin-left: 65px;
+      margin-bottom: 20px;
+    }
+    &__os-item:last-child {
+      margin-bottom: 34px;
+    }
+    &__os-checker legend {
+      margin-bottom: 30px;
+    }
+  }
+
+
+  .contest-form__user-contacts {
+    order: -3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  .contest-form__user-contacts legend {
+    order: -5;
+    margin-bottom: 20px;
+  }
+
+/*  .contest-form__user-contacts input[type="tel"] {
+    order: -4;
+  }
+  .contest-form__user-contacts input[type="email"] {
+    order: -3;
+  }*/ /*
+
+  .contest-form__user-contacts input[type="tel"],
+  .contest-form__user-contacts input[type="email"] {
+  width: 375px;
+  box-sizing: border-box;
+  }
+
+  .contest-form__user-details label {
+    padding: 0;
+    margin-bottom: 45px;
+  }
+
+  .contest-form input[type="text"]:nth-child(4) {
+    width: 380px;
+    box-sizing: border-box;
+  }
+
+  .contest-form__user-contacts-legend {
+    display: block;
+  }
+
+  .contest-form__user-review {
+    width: 940px;
+  }
+  .contest-form__user-achievements {
+    background: $main-bg-color;
+  }
+
+  .contest-form__user-achievements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 940px;
+    box-sizing: border-box;
+  }
+
+  .contest-form__user-achievements li {
+    display: inline-block;
+  }
+
+  .contest-form__user-review fieldset {
+    padding-top: 10px;
+    padding-right: 58px;
+    padding-bottom: 30px;
+    padding-left: 58px;
+  }
+
+  .contest-form__submit-form {
+    width: 300px;
+  }
+
+
+
+  .contest-form__submit-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 940px;
+  }
+  .contest-form__submit-form,
+  .contest-form__warning {
+    padding: 0;
+  }
+
+  .contest-form__warning--desktop {
+    display: inline;
+  }
+  */
+
+}

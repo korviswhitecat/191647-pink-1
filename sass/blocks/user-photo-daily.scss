@@ -1,0 +1,219 @@
+.user-photo-daily {
+  margin-bottom: 20px;
+  text-align: left;
+  font-weight: normal;
+  font-family: $font-family;
+  font-size: 0;
+  position: relative;
+
+  &::before {
+    content: "Панорама дня";
+    width: 140px;
+    height: 30px;
+    display: block;
+    padding-top: 5px;
+    font-family: $font-family;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 20px;
+    background: #d22856;
+    z-index: 10;
+  }
+
+  &__info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: $default-padding;
+    padding-bottom: $default-padding;
+    padding-left: $default-padding;
+    padding-right: 5px;
+    background-color: #f2f2f2;
+  }
+
+  &__name {
+    font-size: $basic-font-size;
+    font-weight: 700;
+  }
+
+  &__time {
+    padding-left: 3px;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  &__comment {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: $basic-font-size;
+    line-height: 24px;
+  }
+
+  & img {
+    height: 138%;
+    width: 100%;
+  }
+
+  &__likes {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $decoration-font-color;
+    position: relative;
+  }
+
+  &__likes::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 3px;
+    background-image: url("../img/icon-heart.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+}
+
+
+
+
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .user-photo-daily {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &::before {
+      top: 57px;
+      right: 40px;
+    }
+
+    &__info-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 620px;
+      box-sizing: border-box;
+      padding-top: 25px;
+      padding-left: 28px;
+    }
+
+    &__title {
+      min-width: 300px;
+      order: -2;
+    }
+
+    &__comment {
+      min-width: 500px;
+      padding: 0;
+    }
+
+    & img {
+      height: 507px;
+      width: 100%;
+    }
+
+    &__likes {
+      order: -1;
+      margin-left: auto;
+      min-width: 140px;
+      padding-left: 0;
+      padding-right: 20px;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    &__likes::before {
+      top: 5px;
+      left: 100px;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-widths) {
+
+  .user-photo-daily {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+    &::before {
+      top: 36px;
+      right: 130px;
+    }
+
+
+    &__info-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 940px;
+      box-sizing: border-box;
+      padding-top: 25px;
+      padding-left: 30px;
+    }
+
+    &__title {
+      min-width: 300px;
+      order: -2;
+    }
+
+    &__likes {
+      order: -1;
+      margin-left: auto;
+      min-width: 150px;
+      padding-left: 0;
+      position: relative;
+    }
+    &__likes::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 5px;
+      right: 24px;
+      background-image: url("../img/icon-heart.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 10;
+    }
+
+    &__comment {
+      min-width: 700px;
+      padding: 0;
+    }
+
+    & img {
+      height: 507px;
+      width: 100%;
+    }
+
+    &__likes::before {
+      top: 5px;
+      left: 100px;
+    }
+  }
+}

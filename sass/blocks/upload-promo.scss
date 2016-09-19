@@ -1,0 +1,33 @@
+.upload-promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: $default-padding;
+  padding-right: $default-padding;
+  padding-left: $default-padding;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  font-family: $font-family;
+  font-size: $basic-font-size;
+  line-height: 30px;
+  background-color: $main-bg-color;
+  text-align: center;
+}
+
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+
+  .upload-promo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: $basic-tablet-font-size;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+
+  .upload-promo {
+    font-size: $basic-desktop-font-size;
+    padding-top: 10px;
+  }
+}

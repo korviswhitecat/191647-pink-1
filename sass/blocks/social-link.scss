@@ -1,0 +1,39 @@
+.social-link {
+  @include inline-block-top;
+  width: 45px;
+  height: 45px;
+  margin-top: 20px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  font-size: 0;
+  line-height: 0;
+  text-decoration: none;
+  cursor: pointer;
+  color: #ffffff;
+  border: $network-border;
+  border-radius: $network-border-radius;
+  background-color: $main-bg-color;
+
+  &:hover {
+    border: $network-hover-border;
+  }
+
+  &:active {
+    border: $network-active-border;
+  }
+
+  &--twitter {
+    background: url("../img/icon-twitter.svg") no-repeat center;
+  }
+
+  &--facebook {
+    background: url("../img/icon-facebook.svg") no-repeat center;
+  }
+
+  &--youtube {
+    background-image: url("../img/icon-youtube.svg");
+    background-repeat: no-repeat;
+    background-position: 20px 15px;
+  }
+}
