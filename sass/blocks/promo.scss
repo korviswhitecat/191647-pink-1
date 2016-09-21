@@ -6,6 +6,7 @@
   padding-right: $default-padding;
   padding-bottom: $default-padding;
   padding-left: $default-padding;
+  box-sizing: border-box;
   &__descr {
     padding-top: 10px;
     padding-right: $default-padding;
@@ -17,6 +18,7 @@
     text-align: center;
     color: $basic-font-color;
     background-color: $main-bg-color;
+    box-sizing: border-box;
   }
 }
 

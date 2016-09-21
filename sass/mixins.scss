@@ -22,10 +22,10 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
-    width: 700px;
+    width: 660px;
   }
 
   @media (min-width: $desktop-widths) {
-    width: 1200px;
+    width: 960px;
   }
 }
