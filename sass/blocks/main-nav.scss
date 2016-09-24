@@ -24,16 +24,12 @@
   background: url("../img/icon-menu-burger.svg") no-repeat right;
   background-size: 90%;
   outline: none;
+  &--opened {
+    background: url("../img/icon-menu-cross.svg") no-repeat center;
+  }
 }
 
 .main-nav--opened {
-  @include inline-block-top;
-  width: 50px;
-  height: 25px;
-  font-size: 0;
-  border: 0;
-  cursor: pointer;
-  background: url("../img/icon-menu-cross.svg") no-repeat center;
   display: none;
 }
 

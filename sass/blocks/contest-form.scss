@@ -431,6 +431,12 @@ legend {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 660px;
+    box-sizing: border-box;
+
+    &__legend {
+      padding-left: 0;
+    }
 
     &__user-details {
       order: -5;
@@ -439,7 +445,7 @@ legend {
       justify-content: space-between;
       align-items: center;
       padding-top: 5px;
-      padding-right: 40px;
+      padding-right: 20px;
       box-sizing: border-box;
     }
 
@@ -472,7 +478,7 @@ legend {
       margin-top: 20px;
       padding-top: 0;
       padding-bottom: 0;
-      padding-left: 45px;
+      padding-left: 0;
       box-sizing: border-box;
       background-color: $main-bg-color;
     }

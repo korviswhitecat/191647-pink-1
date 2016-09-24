@@ -5,8 +5,7 @@
   align-items: center;
   font-family: $font-family;
   background-color: $main-bg-color;
-  font-size: $basic-font-size;
-  line-height: 18px;
+  font-size: 0;
   color: $basic-font-color;
 
   &__copyright {
@@ -30,6 +29,7 @@
 
   &__developer {
     @include inline-block-top;
+    font-size: 14px;
   }
 
   &__img {
