@@ -90,16 +90,12 @@
 }
 
 
-
-
-
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .user-photo-daily {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
 
     &::before {
       top: 57px;
@@ -170,7 +166,9 @@
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: flex-start;
-      width: 940px;
+      margin-left: 20px;
+      margin-right: 20px;
+      width: 920px;
       box-sizing: border-box;
       padding-top: 25px;
       padding-left: 30px;

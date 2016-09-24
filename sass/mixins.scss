@@ -16,16 +16,3 @@
     clear: both;
   }
 }
-
-.container {
-  width: 320px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
-    width: 660px;
-  }
-
-  @media (min-width: $desktop-widths) {
-    width: 960px;
-  }
-}

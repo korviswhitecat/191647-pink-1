@@ -25,9 +25,9 @@
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .promo__descr {
     padding-top: 55px;
-    padding-right: 110px;
+    padding-right: 80px;
     padding-bottom: 38px;
-    padding-left: 110px;
+    padding-left: 80px;
     font-size: $basic-tablet-font-size;
     line-height: 30px;
   }
@@ -36,9 +36,9 @@
 @media (min-width: $desktop-widths) {
   .promo__descr {
     padding-top: 52px;
-    padding-right: 280px;
+    padding-right: 180px;
     padding-bottom: 52px;
-    padding-left: 280px;
+    padding-left: 180px;
     font-size: $basic-desktop-font-size;
   }
 }
