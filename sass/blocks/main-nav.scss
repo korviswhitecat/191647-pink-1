@@ -32,23 +32,23 @@
 .main-nav--opened {
   display: none;
 }
-
+/*
 .main-nav__list li {
   background: $dark-bg-color;
 }
-
+*/
 .main-nav__current,
 .main-nav__item {
   box-shadow: 0 1px 0 0 #000000;
   margin-bottom: 1px;
   min-height: 60px;
 }
-
+/*
 .main-nav__item:first-child {
  box-shadow: 0 1px 0 0 #000000, 0 -1px 0 0 #000000;
 
 }
-
+*/
 .main-nav__current a,
 .main-nav__item a {
   color: #ffffff;

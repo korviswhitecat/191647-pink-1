@@ -1,9 +1,10 @@
 .main-header {
   font-family: $font-family;
-  background: #2b3848;
+  background-color: #2b3848;
+  box-sizing: border-box;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: bottom;
   @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
@@ -40,6 +41,8 @@
     color: #ffffff;
     box-sizing: border-box;
 
+
+
     &--photo {
       padding-bottom: 78px;
       padding-left: 50px;
@@ -58,8 +61,6 @@
     }
   }
 }
-
-
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
 
   .main-header {
