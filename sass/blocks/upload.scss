@@ -41,8 +41,6 @@
   &__filter-tool {
     @include inline-block-top;
     vertical-align: baseline;
-    width: 44px;
-    height: 44px;
     font-size: 0;
     cursor: pointer;
     margin-left: 15px;
@@ -52,6 +50,7 @@
     border: none;
     outline: none;
     background: transparent;
+    padding: 0;
   }
 
   &__filter-tool:hover {
@@ -68,7 +67,6 @@
     fill: #283645;
     opacity: 0.3;
   }
-
 
   & input[type=range] {
     -webkit-appearance: none;

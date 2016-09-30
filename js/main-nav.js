@@ -1,14 +1,15 @@
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
+;(function() {
+  var navToggler = document.getElementById('navToggler'),
+    mainNav = document.querySelector('.main-nav'),
+    mainNavList = document.getElementById('mainNav'),
+    pageHeader = document.querySelector('.main-header');
 
-navMain.classList.remove('main-nav--nojs');
+  mainNav.classList.remove('main-nav--no-js');
 
-navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-  } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
-  }
-});
+  navToggler.addEventListener('click', function() {
+    this.classList.toggle('main-nav__toggler--close');
+    mainNavList.classList.toggle('main-nav__list--opened');
+    mainNavList.parentElement.classList.toggle('main-nav--opened');
+    pageHeader.classList.toggle('main-header--bg-position');
+  });
+})();

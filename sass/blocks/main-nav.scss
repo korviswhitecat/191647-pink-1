@@ -32,10 +32,10 @@
   padding: 0;
   margin: 0;
   list-style: none;
+}
 
-  &.main-nav__list--opened {
-    height: auto;
-  }
+.main-nav__list--opened {
+  height: auto;
 }
 
 .main-nav__item {
@@ -64,17 +64,17 @@
   opacity: 0.3;
 }
 
-.main-nav  svg:last-child {
+.main-nav  svg:first-child {
   display: none;
 }
 
-.main-nav--close {
+.main-nav--opened {
   svg:first-child {
-    display: none;
+    display: inline;
   }
 
   svg:last-child {
-    display: inline;
+    display: none;
   }
 }
 
@@ -89,4 +89,76 @@
 .main-nav  svg:active {
   fill: #d22856;
   opacity: 0.3;
+}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .main-nav {
+
+    &__toggler {
+      margin: 41px 20px;
+    }
+
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .main-nav {
+
+    &--opened {
+      background-color: transparent;
+     }
+
+    &__toggler {
+    display: none;
+   }
+
+   &__list {
+     height: auto;
+     float: right;
+     clear: none;
+   }
+
+   &__item {
+     display: inline-block;
+   }
+
+   &__item a {
+     padding: 42px 40px;
+     text-transform: none;
+     font-weight: 300;
+     background-color: transparent;
+     border: none;
+   }
+  }
+
+  .main-nav__item a:active {
+    color: #fff;
+    opacity: 0.3;
+  }
+
+  .main-nav__item a:last-child {
+    margin-right: 0;
+  }
+  .main-nav__item--active {
+    position: relative;
+  }
+
+  .main-nav__item--active a::before {
+    content: "";
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    bottom: 30px;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  .main-nav__item--active a:hover::before {
+    background-color: #d22856;
+  }
+
+  .main-nav__item--active a:active::before {
+    background-color: #fff;
+    opacity: 0.3;
+  }
 }
