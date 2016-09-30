@@ -56,13 +56,17 @@
   font-size: 18px;
 }
 
-.contacts__map {
-  height: 200px;
+.contacts__map-wrapper {
+  position: relative;
   width: 100%;
-  background: url("../img/bg-map-mobile@1x.png") no-repeat center;
   font-size: 0;
 }
 
+.contacts__footer-triangle {
+  position: absolute;
+  width: 100%;
+  top: -1px;
+}
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .contacts__title {

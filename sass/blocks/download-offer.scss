@@ -1,4 +1,106 @@
 .download-offer {
+  text-align: center;
+  font-family: $font-family;
+  min-height: 732px;
+  color: #fff;
+  background-color: $dark-bg-color;
+  box-sizing: border-box;
+
+  &__option {
+    @include inline-block-top;
+    vertical-align: bottom;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 28px;
+    width: 50px;
+    height: 60px;
+    font-size: 0;
+  }
+
+  &__option--ios {
+    background: url("../img/logo-apple.svg") no-repeat bottom;
+  }
+
+  &__option--android {
+    background: url("../img/logo-android.svg") no-repeat bottom;
+  }
+
+  &__option--windows {
+    background: url("../img/logo-microsoft.svg") no-repeat bottom;
+  }
+
+  &__link {
+    @include inline-block-top;
+    vertical-align: baseline;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: $dark-bg-color;
+    cursor: pointer;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+  }
+
+  &__link:hover {
+    color: $decoration-font-color;
+    background-color: #ffffff;
+  }
+
+  &__link:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+.download-offer__image {
+  width: 100%;
+  min-height: 462px;
+  background-image: url("../img/iphone-hand-mobile@1x.png"),  url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: left 180px, center top;
+  background-size: auto, cover;
+}
+
+.download-offer__wrapper {
+  margin-top: 30px;
+  min-height: 240px;
+  box-sizing: border-box;
+}
+
+.download-offer__slogan {
+  display: none;
+}
+
+.download-offer__options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 65%;
+  min-height: 60px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.download-offer__avaliable {
+  display: block;
+  width: 83%;
+  min-height: 57px;
+  margin: 0 auto;
+  margin-top: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* {
   font-family: $font-family;
   padding-top: $default-padding + 8px;
   padding-bottom: $default-padding;
@@ -84,7 +186,7 @@
 .download-offer  .container {
   box-sizing: border-box;
 }
-
+*/
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
 

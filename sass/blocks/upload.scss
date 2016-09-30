@@ -10,7 +10,6 @@
 
   &__wrapper {
     background-color: $extra-bg-color;
-    padding-top: 5px;
     padding-bottom: 7px;
   }
 
@@ -128,7 +127,7 @@
   }
 
   &__buttons {
-    margin-top: 45px;
+    margin-top: 40px;
     padding-top: $default-padding;
     padding-bottom: $default-padding;
     padding-left: $default-padding;
@@ -152,9 +151,7 @@
       flex-wrap: wrap;
       justify-content: flex-start;
       padding-top: 40px;
-      padding-right: $default-padding;
-      padding-bottom: 55px;
-      padding-left: $default-padding;
+      padding-bottom: 40px;
     }
     &__filters-wrapper {
       display: flex;
@@ -234,6 +231,7 @@
       padding: 0;
       padding-left: 10px;
       margin-bottom: 0;
+      margin-top: 0;
     }
   }
 }
@@ -245,6 +243,7 @@
     flex-direction: column;
     margin-top: 25px;
     margin-bottom: 35px;
+    background-color: #ffffff;
 
     &__promo {
       display: flex;
@@ -256,8 +255,8 @@
     }
 
     &__wrapper {
-      margin-left: 130px;
-      margin-right: 130px;
+      margin-left: $default-padding;
+      margin-right: $default-padding;
       padding: 0;
     }
 
@@ -276,7 +275,7 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      width: 450px;
+      width: 420px;
       box-sizing: border-box;
     }
 

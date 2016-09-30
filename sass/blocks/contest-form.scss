@@ -8,6 +8,7 @@
   font-family: $font-family;
   background-color: $main-bg-color;
   margin-bottom: 45px;
+  box-sizing: border-box;
 
   &__user-details {
     padding-top: $default-padding;
@@ -20,14 +21,18 @@
   &__user-achievements {
     padding-top: 37px;
     padding-bottom: 18px;
-    padding-left: 56px;
+    box-sizing: border-box;
+  }
+
+  &__user-achievements  .container {
+    padding-left: $default-padding;
     padding-right: $default-padding;
     box-sizing: border-box;
   }
 
   &__achievements-title {
     padding-left: $default-padding;
-    padding-right: 60px;
+    padding-right: $default-padding;
     box-sizing: border-box;
     margin-bottom: 25px;
   }
@@ -50,8 +55,8 @@
   }
 
   &__os-checker  .container {
-    padding-left: 20px;
-    padding-right: 40px;
+    padding-left: $default-padding;
+    padding-right: $default-padding;
     box-sizing: border-box;
   }
 
@@ -65,7 +70,7 @@
   }
 
   &__os-title {
-    margin-left: 10px;
+    margin-left: 0;
   }
 
   &__user-review  {
@@ -382,7 +387,6 @@
 
   &__button--progress:hover {
     -webkit-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     transition-duration: 0.5s;
     color: rgba(255, 255, 255, 0.3);
@@ -427,6 +431,12 @@ legend {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 660px;
+    box-sizing: border-box;
+
+    &__legend {
+      padding-left: 0;
+    }
 
     &__user-details {
       order: -5;
@@ -435,7 +445,7 @@ legend {
       justify-content: space-between;
       align-items: center;
       padding-top: 5px;
-      padding-right: 40px;
+      padding-right: 20px;
       box-sizing: border-box;
     }
 
@@ -468,7 +478,7 @@ legend {
       margin-top: 20px;
       padding-top: 0;
       padding-bottom: 0;
-      padding-left: 45px;
+      padding-left: 0;
       box-sizing: border-box;
       background-color: $main-bg-color;
     }

@@ -15,8 +15,8 @@
   justify-content: space-between;
   align-content: stretch;
   box-sizing: border-box;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
   margin-top: 50px;
   }
 }
@@ -28,7 +28,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: stretch;
-  padding-left: 130px;
-  padding-right: 130px;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
   }
 }

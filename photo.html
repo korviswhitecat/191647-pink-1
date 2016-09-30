@@ -7,56 +7,51 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-      <div class="main-header__wrapper">
-        <div class="container">
-          <div class=main-header__tools>
-            <div class="main-header__logo">
-              <img src="img/logo-pink-white-mobile.svg" alt="Pink">
-              <button class="main-nav__toggle" type="button"><img src="img/icon-menu-burger.svg" alt="Pink"></button>
-            </div>
-            <nav class="main-nav   main-nav--closed  main-nav--nojs">
-              <div class="main-nav__wrapper">
-                <ul class="main-nav__list">
-                  <li class="main-nav__item">
-                    <a href="index.html">Главная</a>
-                  </li>
-                  <li class="main-nav__current">
-                    <a href="photo.html">Фотографии</a>
-                  </li>
-                  <li class="main-nav__item">
-                    <a href="form.html">Конкурс</a>
-                  </li>
-                  <li class="main-nav__item">
-                    <a href="#">HTML Academy</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
+    <header class="index-header">
+      <nav class="main-nav  main-nav--opened  main-nav--nojs">
+        <div class="main-nav__visible-row">
+          <div class="main-nav__logo  header-logo">
+            <a class="header-logo__link" href="#"></a>
           </div>
+          <button class="main-nav__toggle" type="button"></button>
         </div>
-      </div>
-      <div class="container">
-        <div class="main-header__promo  main-header__promo--photo">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="photo-promo">
+        <div class="photo-promo__image"></div>
+        <div class="container  photo-promo__description">
           Фотографии пользователей
         </div>
       </div>
-    </header>
-    <main>
       <div class="promo  container">
-        <p class="promo__descr">Взгляните на фотографии, которые выкладывают наши пользователи! Видите, как не хватает ваших?</p>
+        <p class="promo__descr">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
       <article class="user-photo-daily  container">
         <picture>
-        <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
-        <source media="(min-width: 700px)" srcset="img/panorama-tablet@1x.jpg">
+        <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+        <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
         <img class="user-photo-daily__preview" src="img/panorama-mobile@1x.jpg" alt="Фото пользователя Pink">
         </picture>
         <div class="container">
           <section class="user-photo-daily__info-wrapper">
             <div class="user-photo-daily__title">
               <span class="user-photo-daily__name">Анна</span>
-              <time class="user-photo-daily__time" datetime="2016-05-29T10:10:10">(5 часов назад)</time>
+              <time class="user-photo-daily__time" datetime="2016-05-29T10:10:10">(5 минут назад)</time>
             </div>
             <div class="user-photo-daily__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе,
               задавайте свои вопросы!</div>
@@ -70,14 +65,14 @@
       <div class="gallery  container">
         <article class="user-photo">
           <picture>
-          <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg">
-          <source media="(min-width: 700px)" srcset="img/photo-1-tablet@1x.jpg">
-          <img src="img/photo-1-mobile@1x.jpg" alt="Фото пользователя Pink">
+          <source media="(min-width: 960px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+          <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото пользователя Pink">
           </picture>
           <section class="user-photo__info-wrapper">
             <div class="user-photo__title">
               <span class="user-photo__name">Левон</span>
-              <time class="user-photo__time" datetime="2016-05-29T10:10:10">(10 часов назад)</time>
+              <time class="user-photo__time" datetime="2016-05-29T10:10:10">(5 часов назад)</time>
             </div>
             <div class="user-photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</div>
             <div class="user-photo__likes">
@@ -88,9 +83,9 @@
         </article>
         <article class="user-photo">
           <picture>
-          <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg">
-          <source media="(min-width: 700px)" srcset="img/photo-2-tablet@1x.jpg">
-          <img src="img/photo-2-mobile@1x.jpg" alt="Фото пользователя Pink">
+          <source media="(min-width: 960px)" srcset="img/photo-2-desktop@1x.jpg, 1x img/photo-2-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-2-tablet@1x.jpg, 1x img/photo-2-tablet@2x.jpg 2x">
+          <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фото пользователя Pink">
           </picture>
           <section class="user-photo__info-wrapper">
             <div class="user-photo__title">
@@ -106,9 +101,9 @@
         </article>
         <article class="user-photo">
           <picture>
-          <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg">
-          <source media="(min-width: 700px)" srcset="img/photo-3-tablet@1x.jpg">
-          <img src="img/photo-3-mobile@1x.jpg" alt="Фото пользователя Pink">
+          <source media="(min-width: 960px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+          <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Фото пользователя Pink">
           </picture>
           <section class="user-photo__info-wrapper">
             <div class="user-photo__title">
@@ -124,9 +119,9 @@
         </article>
         <article class="user-photo">
           <picture>
-          <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg">
-          <source media="(min-width: 700px)" srcset="img/photo-4-tablet@1x.jpg">
-          <img src="img/photo-4-mobile@1x.jpg" alt="Фото пользователя Pink">
+          <source media="(min-width: 960px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+          <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фото пользователя Pink">
           </picture>
           <section class="user-photo__info-wrapper">
             <div class="user-photo__title">
@@ -142,9 +137,9 @@
         </article>
         <article class="user-photo">
           <picture>
-          <source media="(min-width: 1200px)" srcset="img/photo-5-desktop@1x.jpg">
-          <source media="(min-width: 700px)" srcset="img/photo-5-tablet@1x.jpg">
-          <img src="img/photo-5-mobile@1x.jpg" alt="Фото пользователя Pink">
+          <source media="(min-width: 960px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+          <img src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Фото пользователя Pink">
           </picture>
           <section class="user-photo__info-wrapper">
             <div class="user-photo__title">
@@ -160,9 +155,9 @@
         </article>
         <article class="user-photo">
           <picture>
-          <source media="(min-width: 1200px)" srcset="img/photo-6-desktop@1x.jpg">
-          <source media="(min-width: 700px)" srcset="img/photo-6-tablet@1x.jpg">
-          <img src="img/photo-6-mobile@1x.jpg" alt="Фото пользователя Pink">
+          <source media="(min-width: 960px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+          <img src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Фото пользователя Pink">
           </picture>
           <section class="user-photo__info-wrapper">
             <div class="user-photo__title">
@@ -185,9 +180,9 @@
           <section class="upload__wrapper">
             <form class="upload__form" method="post" action="#.js">
               <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-7-desktop@1x.jpg">
-              <source media="(min-width: 700px)" srcset="img/photo-7-tablet@1x.jpg">
-              <img src="img/photo-7-mobile@1x.jpg" alt="Выберите изображение">
+              <source media="(min-width: 960px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-7-tablet@1x.jpg 1x, photo-7-tablet@2x.jpg 2x">
+              <img src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Выберите изображение">
               </picture>
               <div class="upload__filters-wrapper">
               <div class="upload__filters-options">
@@ -214,8 +209,8 @@
       <div class="main-footer-logo">
         <a href="index.html">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-            <source media="(min-width: 700px)" srcset="img/logo-pink-blue-tablet.svg">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-blue-tablet.svg">
             <img src="img/logo-pink-blue-mobile.svg" alt="Pink">
           </picture>
         </a>
@@ -229,7 +224,7 @@
       </div>
       <div class="main-footer__copyright">
         <div class="main-footer__developer">Разработано</div>
-        <div class="main-footer__copyright-link-wrapper"><a class="main-footer__copyright-link" href="https://htmlacademy.ru/"><svg class="main-footer__img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <div class="main-footer__copyright-link-wrapper"><a href="https://htmlacademy.ru/"><svg class="main-footer__img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 width="26.943px" height="34.09px" fill="#d22856" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
         <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334
         	l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5

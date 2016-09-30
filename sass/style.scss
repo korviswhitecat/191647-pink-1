@@ -1,6 +1,8 @@
 @import "normalize.scss";
 @import "variables.scss";
+@import "fonts.scss";
 @import "mixins.scss";
+@import "global.scss";
 
 /*главная*/
 @import "blocks/download-offer.scss";
@@ -13,6 +15,7 @@
 
 /*фото*/
 @import "blocks/promo.scss";
+@import "blocks/photo-promo.scss";
 @import "blocks/gallery.scss";
 @import "blocks/upload.scss";
 @import "blocks/upload-promo.scss";
@@ -24,10 +27,8 @@
 @import "blocks/contest-form.scss";
 @import "blocks/contest.scss";
 
-
 /*общее*/
-@import "global.scss";
-@import "fonts.scss";
+@import "blocks/header-logo.scss";
 @import "blocks/main-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/main-footer.scss";
