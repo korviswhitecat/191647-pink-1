@@ -8,6 +8,10 @@
   font-size: 0;
   color: $basic-font-color;
 
+  &--hidden {
+    display: none;
+  }
+
   &__copyright {
     display: flex;
     justify-content: center;

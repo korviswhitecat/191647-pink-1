@@ -1,0 +1,45 @@
+.header-logo {
+  float: left;
+  min-height: 50px;
+  margin-left: 20px;
+}
+
+.header-logo__link {
+  display: block;
+  background: url("../img/logo-pink-white-mobile.svg");
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  width: 79px;
+  height: 26px;
+}
+
+.header-logo__link:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .header-logo {
+    margin-left: 40px;
+  }
+
+  .header-logo__link {
+    display: block;
+    background: url("../img/logo-pink-white-tablet.svg");
+    background-repeat: no-repeat;
+    width: 162px;
+    height: 50px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .header-logo {
+    margin-left: 130px;
+  }
+
+  .header-logo__link {
+    display: block;
+    background: url("../img/logo-pink-white-desktop.svg") no-repeat;
+    width: 162px;
+    height: 50px;
+  }
+}

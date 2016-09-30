@@ -7,42 +7,37 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-      <div class="main-header__wrapper">
-        <div class="container">
-          <div class=main-header__tools>
-            <div class="main-header__logo">
-              <img src="img/logo-pink-white-mobile.svg" alt="Pink">
-              <button class="main-nav__toggle  main-nav--closed" type="button"></button>
-            </div>
-            <nav class="main-nav  main-nav--nojs">
-              <div class="main-nav__wrapper">
-                <ul class="main-nav__list">
-                  <li class="main-nav__item">
-                    <a href="index.html">Главная</a>
-                  </li>
-                  <li class="main-nav__current">
-                    <a href="photo.html">Фотографии</a>
-                  </li>
-                  <li class="main-nav__item">
-                    <a href="form.html">Конкурс</a>
-                  </li>
-                  <li class="main-nav__item">
-                    <a href="#">HTML Academy</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
+    <header class="index-header">
+      <nav class="main-nav  main-nav--opened  main-nav--nojs">
+        <div class="main-nav__visible-row">
+          <div class="main-nav__logo  header-logo">
+            <a class="header-logo__link" href="#"></a>
           </div>
+          <button class="main-nav__toggle" type="button"></button>
         </div>
-      </div>
-      <div class="container">
-        <div class="main-header__promo  main-header__promo--photo">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="photo-promo">
+        <div class="photo-promo__image"></div>
+        <div class="container  photo-promo__description">
           Фотографии пользователей
         </div>
       </div>
-    </header>
-    <main>
       <div class="promo  container">
         <p class="promo__descr">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>

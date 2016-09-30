@@ -1,4 +1,8 @@
 .main-header {
+  
+}
+
+/*{
   font-family: $font-family;
   background-color: #2b3848;
   box-sizing: border-box;
@@ -8,8 +12,6 @@
   @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
-
-  &__extra-wrapper
 
   &__wrapper {
     background: rgba(0, 0, 0, 0.3);
@@ -63,6 +65,8 @@
     }
   }
 }
+
+*/
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
 
   .main-header {

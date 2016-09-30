@@ -151,7 +151,7 @@
       flex-wrap: wrap;
       justify-content: flex-start;
       padding-top: 40px;
-      padding-bottom: 55px;
+      padding-bottom: 40px;
     }
     &__filters-wrapper {
       display: flex;
@@ -231,6 +231,7 @@
       padding: 0;
       padding-left: 10px;
       margin-bottom: 0;
+      margin-top: 0;
     }
   }
 }
