@@ -73,6 +73,7 @@
     text-transform: uppercase;
     color: $decoration-font-color;
     position: relative;
+    cursor: pointer;
   }
 
   &__likes::before {

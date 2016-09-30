@@ -47,27 +47,28 @@
     cursor: pointer;
     margin-left: 15px;
     margin-right: 15px;
-    margin-top: 35px;
+    margin-top: 30px;
     margin-bottom: 20px;
-
-    &--crop {
-      background-image: url("../img/icon-editor-crop.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    &--fill {
-      background-image: url("../img/icon-editor-fill.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    &--contrast {
-      background-image: url("../img/icon-editor-contrast.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+    border: none;
+    outline: none;
+    background: transparent;
   }
+
+  &__filter-tool:hover {
+    fill: #283645;
+    opacity: 0.5;
+  }
+
+  &__filter-tool--crop {
+    fill: #d22856;
+  }
+
+  &__filter-tool--contrast,
+  &__filter-tool--fill {
+    fill: #283645;
+    opacity: 0.3;
+  }
+
 
   & input[type=range] {
     -webkit-appearance: none;
