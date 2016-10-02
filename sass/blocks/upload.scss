@@ -28,7 +28,7 @@
     position: absolute;
     width: 320px;
     height: 1px;
-    top: 34px;
+    top: 38px;
     left: -38px;
     background: rgba(40, 54, 69, 0.1);
     z-index: 10;
@@ -43,14 +43,20 @@
     vertical-align: baseline;
     font-size: 0;
     cursor: pointer;
-    margin-left: 15px;
-    margin-right: 15px;
     margin-top: 30px;
-    margin-bottom: 20px;
     border: none;
     outline: none;
     background: transparent;
     padding: 0;
+    width: 48px;
+  }
+
+  &__filters-options {
+    padding-left: 55px;
+    padding-right: 55px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__filter-tool:hover {
@@ -126,7 +132,7 @@
   }
 
   &__buttons {
-    margin-top: 40px;
+    margin-top: 45px;
     padding-top: $default-padding;
     padding-bottom: $default-padding;
     padding-left: $default-padding;
@@ -149,8 +155,8 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: flex-start;
-      padding-top: 40px;
-      padding-bottom: 40px;
+      padding-top: 35px;
+      padding-bottom: 50px;
     }
     &__filters-wrapper {
       display: flex;
@@ -164,11 +170,12 @@
       flex-direction: column;
       justify-content: flex-start;
       margin-right: 10px;
+      flex-wrap: wrap;
+      padding: 0;
     }
-    &__filter-tool {
+    &__filter-tool svg {
       width: 22px;
       height: 22px;
-      background-size: 90%;
     }
 
     &__filter-tool:first-child {
@@ -176,7 +183,14 @@
     }
 
     &__filter-tool:nth-child(n+2) {
-      margin-top: 30px;
+      margin-top: 35px;
+    }
+
+    &__filter-tool--crop,
+    &__filter-tool--fill,
+    &__filter-tool--contrast {
+      fill: #d22856;
+      opacity: 1;
     }
 
     &__filters-range {
@@ -211,14 +225,15 @@
     }
 
     &__range-tool:nth-child(n+2) {
-      margin-top: 67px;
+      margin-top: 70px;
     }
 
-    &__wrapper img {
+    &__wrapper picture {
       width: 300px;
       height: 400px;
       margin-left: 20px;
       margin-right: 35px;
+      padding: 0;
     }
 
     &__buttons {
@@ -238,25 +253,28 @@
 
 @media (min-width: $desktop-widths) {
   .upload {
+    @include desktop-container;
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
-    margin-bottom: 35px;
+    margin-top: 0;
+    padding-bottom: 0;
     background-color: #ffffff;
+    box-sizing: border-box;
 
     &__promo {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-top: 15px;
+      padding-top: 0;
       padding-bottom: 15px;
       margin-bottom: 50px;
     }
 
     &__wrapper {
-      margin-left: $default-padding;
-      margin-right: $default-padding;
+      margin-left: 10px;
+      margin-right: 10px;
       padding: 0;
+      padding-bottom: 10px;
     }
 
     &__form {
@@ -264,7 +282,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: flex-start;
-      padding-top: 30px;
+      padding-top: 50px;
       padding-right: $default-padding;
       padding-bottom: 48px;
       padding-left: $default-padding;
@@ -276,13 +294,16 @@
       flex-direction: row;
       width: 420px;
       box-sizing: border-box;
+      margin-left: 90px;
+
     }
 
     &__filters-options {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      margin-rigth: 10px;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     &__filter-tool {
@@ -291,19 +312,29 @@
       margin: 0;
     }
 
+    &__filter-tool--crop,
+    &__filter-tool--fill,
+    &__filter-tool--contrast {
+      fill: #d22856;
+      opacity: 1;
+    }
+
 
     &__filter-tool:nth-child(2) {
       margin-top: 28px;
     }
 
     &__filter-tool:nth-child(3) {
-      margin-top: 20px;
+      margin-top: 25px;
     }
 
     &__filters-range {
       display: flex;
       flex-direction: column;
       width: 290px;
+      box-sizing: border-box;
+      padding: 0;
+      margin-left: 45px;
     }
 
     &__range-tool {
@@ -331,19 +362,19 @@
     }
 
     &__range-tool:nth-child(2) {
-      margin-top: 70px;
+      margin-top: 75px;
     }
 
     &__range-tool:nth-child(3) {
       margin-top: 65px;
     }
 
-    &__wrapper img {
+    &__wrapper picture {
       margin-left: 60px;
-      margin-right: 90px;
       margin-top: 5px;
       width: 300px;
       height: 400px;
+      box-sizing: border-box;
     }
 
     &__buttons {
@@ -352,7 +383,7 @@
       align-items: flex-end;
       width: 100%;
       padding: 0;
-      margin-bottom: 9px;
+      margin-bottom: 0;
     }
   }
 }

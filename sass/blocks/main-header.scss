@@ -28,11 +28,11 @@
     display: block;
   }
   &__title {
-    min-height: 110px;
+    font-family: $font-family;
     margin-top: 0;
     margin-bottom: 0;
+    min-height: 110px;
     padding: 30px 20px;
-    font-family: $font-family;
     font-size: 24px;
     font-weight: 300;
     line-height: 1.25;
@@ -40,6 +40,10 @@
 
   &--bg-position {
     background-position: center 255px;
+  }
+
+  &__index {
+    font-size: 0;
   }
 }
 
@@ -55,7 +59,8 @@
 
     &__logo {
       float: left;
-      margin: 41px 40px;
+      margin-top: 41px;
+      margin-left: 20px;
     }
 
     &__title {
@@ -84,14 +89,13 @@
     }
 
     &__logo {
-      margin-left: 0;
+      margin-left: 10px;
       margin-top: 26px;
     }
 
     &__title {
-      min-height: 155px;
-      padding-top: 60px;
-      padding-bottom: 60px;
+      padding-top: 65px;
+      padding-bottom: 95px;
       font-size: 50px;
       padding-left: 300px;
       padding-right: 300px;

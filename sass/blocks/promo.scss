@@ -34,11 +34,14 @@
 }
 
 @media (min-width: $desktop-widths) {
+  .promo {
+    margin: 0;
+  }
   .promo__descr {
-    padding-top: 52px;
-    padding-right: 180px;
+    padding-top: 25px;
+    padding-right: 150px;
     padding-bottom: 52px;
-    padding-left: 180px;
+    padding-left: 150px;
     font-size: $basic-desktop-font-size;
   }
 }

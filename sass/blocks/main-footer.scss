@@ -20,7 +20,7 @@
   }
 
   &__copyright-link-wrapper {
-    margin-top: 5px;
+    margin-top: 8px;
     margin-left: 10px;
   }
 
@@ -44,6 +44,7 @@
   }
 
   &__img:active {
+    fill: #283645;
     opacity: 0.3;
   }
 }
@@ -75,15 +76,18 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
-    padding-left: $default-padding;
-    padding-right: $default-padding;
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 45px;
     box-sizing: border-box;
 
     &__copyright {
       margin-top: 0;
       padding-top: 0;
+    }
+
+    &__developer {
       font-size: $basic-desktop-font-size;
     }
   }

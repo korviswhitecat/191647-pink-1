@@ -95,7 +95,7 @@
   .main-nav {
 
     &__toggler {
-      margin: 41px 20px;
+      margin: 41px 0;
     }
 
   }
@@ -116,6 +116,7 @@
      height: auto;
      float: right;
      clear: none;
+     margin-right: -40px;
    }
 
    &__item {

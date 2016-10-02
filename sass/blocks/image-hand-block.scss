@@ -1,0 +1,12 @@
+.image-hand-block {
+  min-height: 395px;
+  position: relative;
+
+  &__image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 258px;
+    height: 286px;
+  }
+}

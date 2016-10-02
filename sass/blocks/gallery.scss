@@ -5,6 +5,7 @@
   font-family: $font-family;
   text-align: center;
   box-sizing: border-box;
+  font-size: 0;
 }
 
 
@@ -28,7 +29,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: stretch;
-  padding-left: $default-padding;
-  padding-right: $default-padding;
+  padding-left: 10px;
+  padding-right: 10px;
   }
 }

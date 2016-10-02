@@ -1,0 +1,42 @@
+.contest-button {
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  background-color: #2aab6d;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: $font-family;
+  font-size: 18px;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
+
+  &--progress {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &--progress:hover {
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--disabled {
+    background-color: #e5e5e5;
+    cursor: none;
+    pointer-events: none;
+  }
+}

@@ -5,6 +5,7 @@
 @import "global.scss";
 
 /*главная*/
+@import "blocks/image-hand-block.scss";
 @import "blocks/download-offer.scss";
 @import "blocks/advertisement.scss";
 @import "blocks/features.scss";
@@ -24,8 +25,10 @@
 @import "blocks/user-photo-daily.scss";
 
 /*форма*/
+@import "blocks/popup.scss";
 @import "blocks/contest-form.scss";
 @import "blocks/contest.scss";
+@import "blocks/contest-button.scss";
 
 /*общее*/
 @import "blocks/logo-inline.scss";
