@@ -7,7 +7,7 @@
   font-weight: 400;
   font-family: $font-family;
   background-color: $main-bg-color;
-  margin-bottom: 45px;
+  margin-bottom: 42px;
   box-sizing: border-box;
 
   &__user-details {
@@ -168,11 +168,11 @@
     font-family: $font-family;
     border: $field-border;
     border-radius: $field-border-radius;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 22px;
     padding-right: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     width: 100%;
     box-sizing: border-box;
     outline: none;
@@ -184,10 +184,11 @@
 
   & input[type="text"]:last-child {
     margin-top: 13px;
+    margin-bottom: 20px;
   }
 
   & input[type="tel"] {
-    margin-top: 10px;
+    margin-top: 8px;
   }
 
   & input[type="email"] {
@@ -229,7 +230,7 @@
     box-sizing: border-box;
     resize: none;
     margin-top: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
     min-height: 200px;
     border: $field-border;
     border-radius: $field-border-radius;
@@ -423,7 +424,7 @@ legend {
     }
 
     &__user-details input[type="text"]:nth-child(6) {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       width: 525px;
     }
 
@@ -467,8 +468,8 @@ legend {
       margin-bottom: 50px;
     }
 
-    &__os-item {
-      padding-left: 45px;
+    &__os-checker label {
+      padding-left: 55px;
     }
 
     &__user-contacts-legend {
@@ -501,6 +502,7 @@ legend {
 
     &__legend--not-mobile {
       display: inline;
+      padding-left: 20px;
     }
 
     &__user-achievements {
@@ -508,8 +510,8 @@ legend {
       padding-top: 25px;
     }
 
-    &__achievements-item {
-      padding-left: 50px;
+    &__user-achievements label {
+      padding-left: 55px;
     }
 
     &__user-review {
@@ -524,7 +526,7 @@ legend {
       align-items: center;
       padding-left: $default-padding;
       padding-right: $default-padding;
-      margin-top: 50px;
+      margin-top: 45px;
       margin-bottom: 25px;
       box-sizing: border-box;
     }
@@ -591,7 +593,7 @@ legend {
     padding-left:  60px;
     padding-right: 60px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
 
   .contest-form textarea[name="review"] {
@@ -615,7 +617,7 @@ legend {
     &__user-details {
       order: -5;
       margin-top: 30px;
-      margin-left: 20px;
+      margin-left: 10px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -625,6 +627,7 @@ legend {
       padding-right: 0;
       width: 440px;
       box-sizing: border-box;
+      margin-bottom: 0;
     }
 
     &__user-details  .contest-form__legend {
@@ -664,6 +667,7 @@ legend {
     width: 440px;
     box-sizing: border-box;
     background-color: $main-bg-color;
+    margin-bottom: 0;
   }
 
   .contest-form__os-checker legend {
@@ -681,7 +685,7 @@ legend {
     width: 440px;
     padding: 0;
     margin: 0;
-    padding-right: 20px;
+    padding-right: 10px;
     box-sizing: border-box;
   }
 
@@ -696,8 +700,11 @@ legend {
     order: -3;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 5px;
+    padding-top: 8px;
     box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+
   }
 
   .contest-form__user-contacts-legend {
@@ -711,18 +718,18 @@ legend {
 
   .contest-form__legend--not-mobile {
     display: inline;
+    padding-left: 0;
+
   }
 
-  .contest-form__user-contacts  .container {
-    padding: 0;
-  }
 
   .contest-form__user-contacts fieldset {
-    padding-left: 55px;
+    padding-left: 60px;
     padding-right: 55px;
     padding-bottom: 20px;
+    padding-top: 5px;
     box-sizing: border-box;
-    width: 920px;
+    width: 940px;
   }
 
   .contest-form__user-contacts-wrapper {
@@ -773,23 +780,49 @@ legend {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1015px;
     box-sizing: border-box;
-    margin-top: 20px;
+    margin-top: 30px;
+  }
+
+  .contest-form__user-achievements  .container {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .contest-form__user-achievements li {
     display: inline-block;
-    width: 280px;
+    width: 255px;
+    margin-left: 55px;
   }
 
   .contest-form__user-achievements fieldset {
+     padding: 0;
      padding-bottom: 25px;
   }
 
   .contest-form__user-achievements ul {
-    margin-left: 55px;
+    margin-left: 0;
     margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contest-form__user-achievements li:first-child {
+    order: -6;
+  }
+
+  .contest-form__user-achievements li:nth-child(3) {
+    order: -5;
+  }
+
+  .contest-form__user-achievements li:nth-child(5) {
+    order: -4;
+  }
+
+  .contest-form__user-review  .container {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
   }
 
   .contest-form__user-review legend {
@@ -799,8 +832,8 @@ legend {
   }
 
   .contest-form__user-review {
+    padding-left: 10px;
     padding-top: 40px;
-    width: 980px;
     box-sizing: border-box;
   }
 
@@ -809,6 +842,8 @@ legend {
     padding-left: 60px;
     padding-right: 55px;
     padding-bottom: 18px;
+    width: 940px;
+    box-sizing: border-box;
   }
 
   .contest-form textarea::-webkit-input-placeholder {
@@ -837,7 +872,12 @@ legend {
   }
   .contest-form__warning {
     padding: 0;
-    padding-right: 20px;
+  }
+
+  .contest-form__submit-footer   {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0;
   }
 
   .contest-form__submit-form {
