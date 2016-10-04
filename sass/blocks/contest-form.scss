@@ -651,15 +651,14 @@ legend {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0;
     box-sizing: border-box;
     margin-bottom: 0;
 
     &__user-details {
       order: -5;
       margin-top: 30px;
-      margin-left: 10px;
+      margin-left: 0;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -739,7 +738,7 @@ legend {
     & input[type="tel"] {
       padding-right: 70px;
     }
-    
+
   }
 
   .contest-form__os-checker {
@@ -765,10 +764,9 @@ legend {
   }
 
   .contest-form__os-checker  .container {
-    width: 440px;
+    width: 100%;
     padding: 0;
     margin: 0;
-    padding-right: 10px;
     box-sizing: border-box;
   }
 
@@ -785,8 +783,8 @@ legend {
     margin-bottom: 0;
     padding-top: 8px;
     box-sizing: border-box;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
 
   }
 
@@ -812,7 +810,6 @@ legend {
     padding-bottom: 20px;
     padding-top: 5px;
     box-sizing: border-box;
-    width: 940px;
   }
 
   .contest-form__user-contacts-wrapper {
@@ -868,8 +865,8 @@ legend {
   }
 
   .contest-form__user-achievements  .container {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .contest-form__user-achievements li {
@@ -915,7 +912,8 @@ legend {
   }
 
   .contest-form__user-review {
-    padding-left: 10px;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 40px;
     box-sizing: border-box;
   }
@@ -925,7 +923,6 @@ legend {
     padding-left: 60px;
     padding-right: 55px;
     padding-bottom: 18px;
-    width: 940px;
     box-sizing: border-box;
   }
 
@@ -958,8 +955,8 @@ legend {
   }
 
   .contest-form__submit-footer   {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
     margin-bottom: 0;
   }
 
