@@ -484,6 +484,43 @@ legend {
       padding-right: $default-padding;
     }
 
+
+    &__field--mobile {
+      position: relative;
+    }
+
+    &__field--mobile::before {
+      position: absolute;
+      content: "";
+    	right: 2px;
+      top: -77px;
+    	width: 60px;
+    	height: 60px;
+      background-color: #e5e5e5;
+      background-image: url("../img/icon-phone.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+
+    &__field--email {
+      position: relative;
+    }
+
+    &__field--email::before {
+      position: absolute;
+      content: "";
+    	right: 2px;
+      top: -77px;
+    	width: 60px;
+    	height: 60px;
+      background-color: #e5e5e5;
+      background-image: url("../img/icon-mail.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 50;
+    }
+
     &__user-contacts fieldset {
       padding-left: 55px;
       padding-right: 55px;
@@ -538,6 +575,11 @@ legend {
       width: 300px;
       box-sizing: border-box;
       padding: 0;
+    }
+
+    & input[type="email"],
+    & input[type="tel"] {
+      padding-right: 70px;
     }
   }
 
@@ -657,6 +699,47 @@ legend {
     &__user-details label:nth-child(5) {
       margin-bottom: 18px;
     }
+
+    &__field--mobile {
+      position: relative;
+    }
+
+    &__field--mobile::before {
+      position: absolute;
+      content: "";
+    	right: -43px;
+      top: -75px;
+    	width: 60px;
+    	height: 60px;
+      background-color: #e5e5e5;
+      background-image: url("../img/icon-phone.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &__field--email {
+      position: relative;
+    }
+
+    &__field--email::before {
+      position: absolute;
+      content: "";
+    	right: 2px;
+      top: -75px;
+    	width: 60px;
+    	height: 60px;
+      background-color: #e5e5e5;
+      background-image: url("../img/icon-mail.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 50;
+    }
+
+    & input[type="email"],
+    & input[type="tel"] {
+      padding-right: 70px;
+    }
+    
   }
 
   .contest-form__os-checker {
