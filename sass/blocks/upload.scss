@@ -14,8 +14,8 @@
   }
 
   &__filters-range {
-    padding-left: $default-padding * 2;
-    padding-right: $default-padding * 2;
+    padding-left: $default-padding;
+    padding-right: $default-padding;
   }
 
   &__range-tool {
@@ -52,8 +52,8 @@
   }
 
   &__filters-options {
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: 35px;
+    padding-right: 35px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -135,8 +135,6 @@
     margin-top: 45px;
     padding-top: $default-padding;
     padding-bottom: $default-padding;
-    padding-left: $default-padding;
-    padding-right: $default-padding;
   }
 }
 
@@ -162,7 +160,7 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      width: 290px;
+      width: 275px;
       box-sizing: border-box;
     }
     &__filters-options {
@@ -231,7 +229,7 @@
     &__wrapper picture {
       width: 300px;
       height: 400px;
-      margin-left: 20px;
+      margin-left: 0;
       margin-right: 35px;
       padding: 0;
     }
@@ -257,6 +255,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 0;
+    margin-bottom: 20px;
     padding-bottom: 0;
     background-color: #ffffff;
     box-sizing: border-box;
@@ -271,8 +270,8 @@
     }
 
     &__wrapper {
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 0;
+      margin-right: 0;
       padding: 0;
       padding-bottom: 10px;
     }
@@ -292,9 +291,9 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      width: 420px;
+      width: 410px;
       box-sizing: border-box;
-      margin-left: 90px;
+      margin-left: 85px;
 
     }
 
@@ -384,6 +383,7 @@
       width: 100%;
       padding: 0;
       margin-bottom: 0;
+      margin-top: 40px;
     }
   }
 }

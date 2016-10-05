@@ -13,8 +13,6 @@
   &__user-details {
     padding-top: $default-padding;
     padding-bottom: $default-padding;
-    padding-left: $default-padding;
-    padding-right: $default-padding;
     box-sizing: border-box;
   }
 
@@ -24,11 +22,6 @@
     box-sizing: border-box;
   }
 
-  &__user-achievements  .container {
-    padding-left: $default-padding;
-    padding-right: $default-padding;
-    box-sizing: border-box;
-  }
 
   &__achievements-title {
     padding-left: $default-padding;
@@ -43,8 +36,6 @@
 
   &__user-contacts {
     padding-top: 35px;
-    padding-left: $default-padding;
-    padding-right: $default-padding;
     box-sizing: border-box;
     margin-bottom: 30px;
   }
@@ -55,8 +46,8 @@
   }
 
   &__os-checker  .container {
-    padding-left: $default-padding;
-    padding-right: $default-padding;
+    padding-left: 0;
+    padding-right: 0;
     box-sizing: border-box;
   }
 
@@ -76,8 +67,8 @@
   &__user-review  {
     padding-top: 55px;
     padding-bottom: $default-padding;
-    padding-left: $default-padding;
-    padding-right: $default-padding;
+    padding-left: 0;
+    padding-right: 0;
     box-sizing: border-box;
   }
 
@@ -356,11 +347,6 @@
     padding-bottom: 10px;
   }
 
-  &__submit-form {
-    padding-left: $default-padding;
-    padding-right: $default-padding;
-  }
-
   &__warning {
     text-transform: uppercase;
     text-align: center;
@@ -394,7 +380,7 @@ legend {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 660px;
+    min-width: 620px;
     box-sizing: border-box;
 
     &__legend {
@@ -408,7 +394,8 @@ legend {
       justify-content: space-between;
       align-items: center;
       padding-top: 5px;
-      padding-right: 20px;
+      padding-right: 0;
+      padding-left: 0;
       box-sizing: border-box;
     }
 
@@ -480,8 +467,8 @@ legend {
     &__user-contacts {
       order: -3;
       margin-top: 22px;
-      padding-left: $default-padding;
-      padding-right: $default-padding;
+      padding-left: 0;
+      padding-right: 0;
     }
 
 
@@ -553,16 +540,16 @@ legend {
 
     &__user-review {
       padding-top: 40px;
-      padding-left: $default-padding;
-      padding-right: $default-padding;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     &__submit-footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-left: $default-padding;
-      padding-right: $default-padding;
+      padding-left: 0;
+      padding-right: 0;
       margin-top: 45px;
       margin-bottom: 25px;
       box-sizing: border-box;
@@ -609,8 +596,8 @@ legend {
 
   .contest-form__user-achievements  .container {
     box-sizing: border-box;
-    padding-right: $default-padding;
-    padding-left: $default-padding;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .contest-form__user-achievements legend {
@@ -641,6 +628,8 @@ legend {
   .contest-form textarea[name="review"] {
     min-height: 193px;
   }
+
+
 }
 
 
