@@ -1,7 +1,7 @@
 .pseudo-science {
   color: $basic-font-color;
   padding-top: $default-padding;
-  padding-right: $default-padding;
+  padding-right: 10px;
   padding-bottom: $default-padding;
   background-color: $main-bg-color;
   box-sizing: border-box;
@@ -16,7 +16,7 @@
     font-weight: 700;
     margin-top: 75px;
     margin-bottom: 10px;
-    padding-right: 150px;
+    padding-right: 10px;
   }
   &__link {
     @include inline-block-top;
@@ -27,8 +27,45 @@
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .pseudo-science {
-    display: block;
-    padding-left: 340px;
+    display: block
+  }
+
+  .pseudo-science--wrapper {
+    @include clearfix;
+  }
+
+  .pseudo-science--timer-wrapper {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 5px;
+    float: left;
+    width: 240px;
+    height: 280px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    -webkit-background-size: auto 276px;
+    background-size: auto 276px;
+    text-align: center;
+  }
+
+  .pseudo-science--timer-time {
+    position: absolute;
+    font-size: 96px;
+    color: $decoration-font-color;
+    font-weight: 700;
+    line-height: 160px;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border: 15px solid #d22856;
+    text-align: center;
+    top: 53px;
+    left: 15px;
+  }
+
+  .pseudo-science--content {
+    float: right;
+    width: 305px;
   }
 }
 

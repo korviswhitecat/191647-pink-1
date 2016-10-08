@@ -7,42 +7,41 @@
   font-family: $font-family;
   text-align: center;
   position: relative;
-  padding-bottom: 50px;
   & p {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-/*
-  &__decoration {
-    text-align: center;
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    height: auto;
-    overflow: hidden;
-
-
+  &--decoration {
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(-6deg, #f2f2f2 50%, #ffffff 50%);
   }
-  */
+
+
 }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .advertisement {
     box-sizing: border-box;
     font-size: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-top: 45px;
     & p {
       padding: 0;
       margin: 0;
       width: 100%;
       box-sizing: border-box;
+      line-height: 1.25;
     }
     & p:nth-child(n+2) {
       padding-left: 50px;
       padding-right: 50px;
+    }
+
+    &--decoration {
+      margin-top: 35px;
+      width: 100%;
+      height: 70px;
+      background-image: linear-gradient(-4deg, #f2f2f2 50%, #ffffff 50%);
     }
   }
 }
@@ -53,13 +52,17 @@
   .advertisement p {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    line-height: 1.2;
   }
   .advertisement {
     font-size: 50px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-right: 100px;
-    padding-left: 100px;
-    height: 160px;
+    padding-top: 70px;
+    box-sizing: border-box;
+
+    & p:nth-child(n+2) {
+      padding-left: 150px;
+      padding-right: 150px;
+    }
   }
 }

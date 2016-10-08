@@ -1,4 +1,4 @@
-.feedback {
+.rewiews {
   font-family: $font-family;
   text-align: center;
   font-size: $basic-font-size;
@@ -7,13 +7,13 @@
   background-color: $main-bg-color;
   box-sizing: border-box;
   padding-top: 40px;
-
 }
-.feedback__item-additional {
+
+.rewiews__item-additional {
   display: none;
 
 }
-.feedback__item-title {
+.rewiews__item-title {
   color: $title-font-color;
   font-weight: 700;
   font-size: 18px;
@@ -21,12 +21,47 @@
   box-sizing: border-box;
 }
 
-.feedback__item-descr {
+.rewiews__item-descr {
   font-weight: 400;
   font-size: $basic-font-size;
   box-sizing: border-box;
 }
 
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .rewiews {
+    padding-top: 50px;
+
+    &__item-additional {
+      display: block;
+      font-size: 14px;
+      line-height: 30px;
+    }
+
+    &__item-title {
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: 20px;
+      padding-left: 5px;
+    }
+
+    &__item-descr {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    &__item-descr {
+      order: -4;
+    }
+
+  }
+
+}
 /*
 
 .feedback {

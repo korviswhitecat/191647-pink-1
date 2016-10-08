@@ -4,9 +4,26 @@
 
   &__image {
     position: absolute;
-    left: 0;
+    left: -20px;
     bottom: 0;
     width: 258px;
     height: 286px;
   }
+}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .image-hand-block {
+    position: absolute;
+    left: -10px;
+    top: -35px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .image-hand-block {
+    position: absolute;
+    left: 40px;
+    top: -15px;
+  }
+
 }

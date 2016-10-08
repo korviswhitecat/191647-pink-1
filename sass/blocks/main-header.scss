@@ -80,6 +80,16 @@
       padding-top: 70px;
       padding-bottom: 135px;
     }
+
+
+    &__index {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      min-height: 620px;
+    }
+
   }
 }
 
@@ -116,6 +126,15 @@
       padding-left: 70px;
       padding-right: 70px;
       box-sizing: border-box;
+
+    }
+
+    &__index {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      min-height: 740px;
 
     }
   }

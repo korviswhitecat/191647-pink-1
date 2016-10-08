@@ -21,3 +21,8 @@
   width: 940px;
   margin: 0 auto;
 }
+
+@mixin tablet-container() {
+  width: 620px;
+  margin: 0 auto;
+}
