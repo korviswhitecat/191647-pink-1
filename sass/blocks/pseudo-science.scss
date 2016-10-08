@@ -72,5 +72,44 @@
 @media (min-width: $desktop-widths) {
   .pseudo-science {
     display: block;
+    background-color: $extra-bg-color;
+  }
+
+  .pseudo-science--wrapper {
+    @include clearfix;
+  }
+
+  .pseudo-science--timer-wrapper {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 5px;
+    float: left;
+    width: 300px;
+    height: 346px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    -webkit-background-size: auto 366px;
+    background-size: auto 346px;
+    text-align: center;
+  }
+
+  .pseudo-science--timer-time {
+    position: absolute;
+    font-size: 120px;
+    color: $decoration-font-color;
+    font-weight: 700;
+    line-height: 200px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 17px solid #d22856;
+    text-align: center;
+    top: 67px;
+    left: 23px;
+  }
+
+  .pseudo-science--content {
+    float: right;
+    width: 570px;
   }
 }

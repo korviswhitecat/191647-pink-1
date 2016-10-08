@@ -119,8 +119,8 @@ iframe {
 @media (min-width: $desktop-widths) {
   .contacts__title {
     font-size: 50px;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
   .contacts__options {
     @include block;
