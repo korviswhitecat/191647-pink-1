@@ -80,6 +80,12 @@ iframe {
 }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+
+  .contacts {
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+
   .contacts__title {
     font-size: 40px;
     padding-left: 50px;
@@ -121,6 +127,9 @@ iframe {
     font-size: 50px;
     padding-left: 200px;
     padding-right: 200px;
+    line-height: 1.25;
+    order: -4;
+    margin-bottom: 30px;
   }
   .contacts__options {
     @include block;
@@ -133,5 +142,30 @@ iframe {
   .contacts__iframe {
     position: relative;
     height: 500px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  .contacts__options:nth-child(2) {
+    order: -3;
+  }
+
+  .contacts__options:nth-child(4) {
+    order: -2;
+  }
+
+  .contats__options-title {
+    margin-bottom: 20px;
+  }
+
+  .contacts__wrapper {
+    padding-bottom: 0;
   }
 }

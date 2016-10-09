@@ -50,6 +50,8 @@
 
   &__index {
     font-size: 0;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 }
 
@@ -88,6 +90,8 @@
       flex-wrap: wrap;
       justify-content: flex-start;
       min-height: 620px;
+      overflow: hidden;
+
     }
 
   }
@@ -135,6 +139,8 @@
       flex-wrap: wrap;
       justify-content: flex-start;
       min-height: 740px;
+      overflow: hidden;
+
 
     }
   }

@@ -26,3 +26,8 @@
   width: 620px;
   margin: 0 auto;
 }
+
+@mixin mobile-container() {
+  width: 280px;
+  margin: 0 auto;
+}

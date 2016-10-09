@@ -28,9 +28,6 @@
   margin-top: 10px;
 }
 
-#rates-input-1:checked ~ .slider__toggles label[for="rates-input-1"],
-#rates-input-2:checked ~ .slider__toggles label[for="rates-input-2"],
-#rates-input-3:checked ~ .slider__toggles label[for="rates-input-3"],
 #rewiews-input-1:checked ~ .slider__toggles label[for="rewiews-input-1"],
 #rewiews-input-2:checked ~ .slider__toggles label[for="rewiews-input-2"],
 #rewiews-input-3:checked ~ .slider__toggles label[for="rewiews-input-3"] {
@@ -57,58 +54,62 @@
 #rewiews-input-3:checked ~ .slider__slides .slider__item:nth-child(3) {
     display: block;
 }
-/*
-@media ($mobile-width-only) {
-  #rates-input-1:checked ~ .rates__wrapper .rates__items {
-  	transform: translate(0);
-  }
-  #rates-input-2:checked ~ .rates__wrapper .rates__items {
-  	transform: translate( -33.3%);
-  }
-  #rates-input-3:checked ~ .rates__wrapper .rates__items {
-  	transform: translate( -66.6%);
-  }
-}
-*/
-@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
-  // .slider__items {
-  //   min-height: 285px;
-  // }
 
-  // .slider__toggles {
-  //   bottom: 24px;
-  //   left: 53%;
-  // }
+.slider__toggles {
+  margin-left: 20px;
+}
+
+.slider__arrows {
+  display: none;
+}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
 
   .slider__toggles {
     margin-top: 20px;
     margin-left: 20px;
-  }
-
-  .rates__toggles {
-    display: none;
-  }
-
-  .rates__check-mark-name {
-    display: none;
-  }
-
-  .rates__check-marks {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .rates__check-mark {
-    float: none;
-      &--marked,
-      &--unmarked {
-      padding-right: 110px;
-    }
   }
 }
 
 @media (min-width: $desktop-widths) {
   .slider {
     min-height: 408px;
+  }
+
+  .slider__arrows {
+    display: block;
+    position: relative;
+  }
+  .slider__arrows-left,
+  .slider__arrows-right {
+    position: absolute;
+    width: 22px;
+    height: 44px;
+    opacity: 0.3;
+    cursor: pointer;
+  }
+
+  .slider__arrows-left:hover,
+  .slider__arrows-right:hover {
+    opacity: 0.6;
+  }
+
+  .slider__arrows-left:active,
+  .slider__arrows-right:active {
+    opacity: 0.1;
+  }
+
+  .slider__arrows-left {
+    top: -160px;
+    left: 0
+  }
+
+  .slider__arrows-right {
+    top: -160px;
+    right: 0;
+  }
+
+  .slider__toggles {
+    display: none;
   }
 }

@@ -73,6 +73,13 @@
   .pseudo-science {
     display: block;
     background-color: $extra-bg-color;
+    padding-top: 0;
+    padding-bottom: 60px;
+
+    &__content {
+      padding-top: 10px;
+      padding-bottom: 25px;
+    }
   }
 
   .pseudo-science--wrapper {
@@ -111,5 +118,8 @@
   .pseudo-science--content {
     float: right;
     width: 570px;
+    padding-top: 55px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
