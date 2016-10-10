@@ -314,10 +314,10 @@
   &__user-achievements input[type="checkbox"]:checked + label::after {
   	content: "";
   	position: absolute;
-  	top: 4px;
-  	left: 12px;
-  	width: 15px;
-  	height: 15px;
+  	top: 1px;
+  	left: 10px;
+  	width: 20px;
+  	height: 20px;
   	background-color: $decoration-font-color;
     background: url("../img/icon-yes.svg") no-repeat center;
   }
@@ -863,7 +863,7 @@ legend {
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .contest-form__user-achievements  .container {
@@ -873,8 +873,13 @@ legend {
 
   .contest-form__user-achievements li {
     display: inline-block;
-    width: 255px;
-    margin-left: 55px;
+    width: 260px;
+    margin-left: 51px;
+    box-sizing: border-box;
+  }
+
+  .contest-form__user-achievements label {
+    padding-left: 60px;
   }
 
   .contest-form__user-achievements fieldset {

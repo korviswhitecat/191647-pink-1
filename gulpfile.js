@@ -84,7 +84,6 @@ gulp.task("build", function(fn) {
     );
 });
 
-
 gulp.task("serve", ["style"], function() {
   server.init({
     server: ".",
