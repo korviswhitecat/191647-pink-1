@@ -84,7 +84,7 @@
         background-image: url("../img/iphone-screen-3-tablet@2x.jpg");
       }
     }
-    
+
     &__item {
       text-align: left;
     }
@@ -114,8 +114,11 @@
 
     &__list {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       box-sizing: border-box;
+      padding-left: 10px;
+      padding-right: 10px;
+
     }
 
     &__item {
