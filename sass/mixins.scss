@@ -16,3 +16,18 @@
     clear: both;
   }
 }
+
+@mixin desktop-container() {
+  width: 940px;
+  margin: 0 auto;
+}
+
+@mixin tablet-container() {
+  width: 620px;
+  margin: 0 auto;
+}
+
+@mixin mobile-container() {
+  width: 280px;
+  margin: 0 auto;
+}

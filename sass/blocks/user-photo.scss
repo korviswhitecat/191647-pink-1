@@ -46,6 +46,7 @@
     text-transform: uppercase;
     color: #d22856;
     position: relative;
+    cursor: pointer;
   }
 
   &__likes::before {
@@ -124,7 +125,7 @@
 
     &__info-wrapper {
       padding-top: 25px;
-      padding-left: 30px;
+      padding-left: 25px;
     }
 
     &__comment {

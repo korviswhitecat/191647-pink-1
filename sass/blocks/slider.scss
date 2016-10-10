@@ -1,0 +1,115 @@
+.slider {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.slider__items {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slider__items input {
+  display: none;
+}
+
+.slider__items label {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 10px;
+  background: #c2c6ca;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-clip: content-box;
+  border: 3px solid transparent;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#rewiews-input-1:checked ~ .slider__toggles label[for="rewiews-input-1"],
+#rewiews-input-2:checked ~ .slider__toggles label[for="rewiews-input-2"],
+#rewiews-input-3:checked ~ .slider__toggles label[for="rewiews-input-3"] {
+  background-color: transparent;
+  border: 3px solid #1d2632;
+}
+
+.slider__item {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider__item {
+  display: none;
+}
+
+#rewiews-input-1:checked ~ .slider__slides .slider__item:nth-child(1) {
+    display: block;
+}
+#rewiews-input-2:checked ~ .slider__slides .slider__item:nth-child(2) {
+    display: block;
+}
+#rewiews-input-3:checked ~ .slider__slides .slider__item:nth-child(3) {
+    display: block;
+}
+
+.slider__toggles {
+  margin-left: 20px;
+}
+
+.slider__arrows {
+  display: none;
+}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+
+  .slider__toggles {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .slider {
+    min-height: 408px;
+  }
+
+  .slider__arrows {
+    display: block;
+    position: relative;
+  }
+  .slider__arrows-left,
+  .slider__arrows-right {
+    position: absolute;
+    width: 22px;
+    height: 44px;
+    opacity: 0.3;
+    cursor: pointer;
+  }
+
+  .slider__arrows-left:hover,
+  .slider__arrows-right:hover {
+    opacity: 0.6;
+  }
+
+  .slider__arrows-left:active,
+  .slider__arrows-right:active {
+    opacity: 0.1;
+  }
+
+  .slider__arrows-left {
+    top: -160px;
+    left: 0
+  }
+
+  .slider__arrows-right {
+    top: -160px;
+    right: 0;
+  }
+
+  .slider__toggles {
+    display: none;
+  }
+}

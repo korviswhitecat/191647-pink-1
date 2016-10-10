@@ -5,13 +5,15 @@
 @import "global.scss";
 
 /*главная*/
+@import "blocks/image-hand-block.scss";
 @import "blocks/download-offer.scss";
 @import "blocks/advertisement.scss";
 @import "blocks/features.scss";
 @import "blocks/pseudo-science.scss";
-@import "blocks/feedback.scss";
+@import "blocks/reviews.scss";
 @import "blocks/price.scss";
 @import "blocks/contacts.scss";
+@import "blocks/slider.scss";
 
 /*фото*/
 @import "blocks/promo.scss";
@@ -24,11 +26,13 @@
 @import "blocks/user-photo-daily.scss";
 
 /*форма*/
+@import "blocks/popup.scss";
 @import "blocks/contest-form.scss";
 @import "blocks/contest.scss";
+@import "blocks/contest-button.scss";
 
 /*общее*/
-@import "blocks/header-logo.scss";
+@import "blocks/logo-inline.scss";
 @import "blocks/main-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/main-footer.scss";

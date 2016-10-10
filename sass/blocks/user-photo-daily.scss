@@ -73,6 +73,7 @@
     text-transform: uppercase;
     color: $decoration-font-color;
     position: relative;
+    cursor: pointer;
   }
 
   &__likes::before {
@@ -100,7 +101,7 @@
 
     &::before {
       top: 57px;
-      right: 40px;
+      right: 10px;
     }
 
     &__info-wrapper {
@@ -157,8 +158,8 @@
     margin-bottom: 50px;
 
     &::before {
-      top: 36px;
-      right: 130px;
+      top: 55px;
+      right: 0;
     }
 
 
@@ -167,12 +168,13 @@
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: flex-start;
-      margin-left: 20px;
-      margin-right: 20px;
-      width: 920px;
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 940px;
       box-sizing: border-box;
       padding-top: 25px;
-      padding-left: 30px;
+      padding-left: 25px;
+      font-size: 0;
     }
 
     &__title {
@@ -192,8 +194,6 @@
       position: absolute;
       width: 15px;
       height: 15px;
-      top: 5px;
-      right: 24px;
       background-image: url("../img/icon-heart.svg");
       background-position: center;
       background-repeat: no-repeat;
@@ -212,7 +212,7 @@
 
     &__likes::before {
       top: 5px;
-      left: 100px;
+      left: 105px;
     }
   }
 }

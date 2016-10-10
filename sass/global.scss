@@ -6,14 +6,14 @@ body {
 }
 
 .container {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
 
   @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
-    width: 660px;
+    width: 620px;
   }
 
   @media (min-width: $desktop-widths) {
-    width: 960px;
+    width: 940px;
   }
 }

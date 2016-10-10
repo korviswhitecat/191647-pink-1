@@ -4,9 +4,15 @@
   align-items: center;
 }
 
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .social-networks {
+    margin-left: -25px;
+  }
+}
+
 
 @media (min-width: $desktop-widths) {
   .social-networks {
-    padding-left: 15px;
+    padding-left: 30px;
   }
 }

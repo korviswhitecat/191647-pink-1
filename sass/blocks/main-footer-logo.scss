@@ -4,20 +4,47 @@
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
-}
+  cursor: pointer;
 
+  &--desktop {
+    display: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover {
+    &:not(:active) {
+      path {
+        fill: #d22856;
+      }
+    }
+  }
+}
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
 
   .main-footer-logo {
     padding-top: 0;
+
+    &--desktop {
+      display: none;
+    }
   }
 }
-
 
 @media (min-width: $desktop-widths) {
 
   .main-footer-logo {
     padding-top: 0;
+
+    &--mobile-tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }

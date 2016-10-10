@@ -1,0 +1,46 @@
+.image-hand-block {
+  min-height: 395px;
+  position: relative;
+
+  &__image {
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 258px;
+    height: 286px;
+  }
+}
+
+@media (max-width: $tablet-widths) {
+  .image-hand-block {
+  @include mobile-container;
+  }
+}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .image-hand-block {
+    position: absolute;
+    left: -10px;
+    top: -34px;
+  }
+
+  &__image {
+    position: relative;
+    width: 700px;
+    height: 545px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .image-hand-block {
+    position: absolute;
+    left: 40px;
+    top: -15px;
+  }
+
+  &__image {
+    position: relative;
+    width: 1050px;
+    height: 645px;
+  }
+}
