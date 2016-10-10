@@ -436,6 +436,8 @@ legend {
     &__os-checker legend {
       display: block;
       width: 366px;
+      text-align: center;
+      margin-left: 130px;
     }
 
     &__user-review fieldset,
@@ -462,6 +464,7 @@ legend {
     &__user-contacts-legend {
       display: block;
       width: 260px;
+      margin-left: 125px;
     }
 
     &__user-contacts {
@@ -568,6 +571,7 @@ legend {
     & input[type="tel"] {
       padding-right: 70px;
     }
+
   }
 
   .contest-form__user-contacts-wrapper .contest-form__field:nth-child(2) {
@@ -604,6 +608,8 @@ legend {
     display: block;
     padding: 0;
     width: 430px;
+    margin-left: 50px;
+
   }
 
   .contest-form__user-achievements fieldset {
@@ -616,6 +622,9 @@ legend {
     display: block;
     padding: 0;
     width: 260px;
+    margin-left: 120px;
+
+
   }
 
   .contest-form__user-review fieldset {
@@ -744,6 +753,8 @@ legend {
   .contest-form__os-checker legend {
     display: block;
     width: 366px;
+    margin-left: 35px;
+
   }
   .contest-form__user-review fieldset,
   .contest-form__user-achievements fieldset,
@@ -780,6 +791,7 @@ legend {
   .contest-form__user-contacts-legend {
     display: block;
     width: 260px;
+    margin-left: 265px;
   }
 
   .contest-form__legend--mobile {
@@ -842,6 +854,7 @@ legend {
     display: block;
     padding: 0;
     width: 430px;
+    margin-left: 250px;
   }
 
   .contest-form__user-achievements {
@@ -898,6 +911,7 @@ legend {
     display: block;
     padding: 0;
     width: 260px;
+    margin-left: 270px;
   }
 
   .contest-form__user-review {
