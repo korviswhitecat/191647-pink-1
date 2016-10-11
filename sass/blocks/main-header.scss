@@ -10,49 +10,49 @@
   background-size: auto 472px;
   @include clearfix;
 
-  &__wrapper {
-    @include clearfix;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  &__wrapper-inner {
-    @include clearfix;
-  }
-
-  &__logo {
-    float: left;
-    margin: 22px 20px;
-  }
-
-  &__logo-link {
-    display: block;
-  }
-  &__title {
-    font-family: $font-family;
-    margin-top: 0;
-    margin-bottom: 0;
-    min-height: 110px;
-    padding: 30px 20px;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 1.25;
-    box-sizing: border-box;
-  }
-
-  &__title--photo {
-    padding-top: 30px;
-    padding-bottom: 80px;
-  }
-
   &--bg-position {
     background-position: center 255px;
   }
+}
 
-  &__index {
-    font-size: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
+.main-header__wrapper {
+  @include clearfix;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-header__wrapper-inner {
+  @include clearfix;
+}
+
+.main-header__logo {
+  float: left;
+  margin: 22px 20px;
+}
+
+.main-header__logo-link {
+  display: block;
+}
+.main-header__title {
+  font-family: $font-family;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 110px;
+  padding: 30px 20px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.25;
+  box-sizing: border-box;
+}
+
+.main-header__title--photo {
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+.main-header__index {
+  font-size: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
@@ -64,36 +64,33 @@
     &--bg-position {
       background-position: center 250px;
     }
+  }
 
-    &__logo {
-      float: left;
-      margin-top: 41px;
-      margin-left: 10px;
-    }
+  .main-header__logo {
+    float: left;
+    margin-top: 41px;
+    margin-left: 10px;
+  }
 
-    &__title {
-      min-height: 190px;
-      padding-top: 70px;
-      padding-bottom: 70px;
-      font-size: 50px;
-    }
+  .main-header__title {
+    min-height: 190px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-size: 50px;
 
-    &__title--photo {
+    &--photo {
       padding-top: 70px;
       padding-bottom: 135px;
     }
+  }
 
-
-    &__index {
-      position: relative;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      min-height: 620px;
-      overflow: hidden;
-
-    }
-
+  .main-header__index {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    min-height: 620px;
+    overflow: hidden;
   }
 }
 
@@ -106,42 +103,42 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
 
-    &__wrapper {
-      box-sizing: border-box;
-    }
     &--bg-position {
       background-position: top center;
     }
-    &__wrapper-inner {
-      margin: 0 auto;
-      max-width: 940px;
-    }
+  }
 
-    &__logo {
-      margin-left:0;
-      margin-top: 26px;
-      box-sizing: border-box;
-    }
+  .main-header__wrapper-inner {
+    margin: 0 auto;
+    max-width: 940px;
+  }
 
-    &__title {
-      padding-top: 65px;
-      padding-bottom: 95px;
-      font-size: 50px;
-      padding-left: 70px;
-      padding-right: 70px;
-      box-sizing: border-box;
+  .main-header__logo {
+    margin-left:0;
+    margin-top: 26px;
+    box-sizing: border-box;
+  }
 
-    }
+  .main-header__title {
+    padding-top: 65px;
+    padding-bottom: 95px;
+    font-size: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+    box-sizing: border-box;
 
-    &__index {
-      position: relative;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      min-height: 740px;
-      overflow: hidden;
+  }
 
+  .main-header__index {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    min-height: 740px;
+    overflow: hidden;
+  }
 
-    }
+  .main-header__wrapper {
+    box-sizing: border-box;
   }
 }

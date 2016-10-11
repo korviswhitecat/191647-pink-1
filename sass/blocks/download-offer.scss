@@ -6,74 +6,74 @@
   background-color: $dark-bg-color;
   text-align: center;
   color: #ffffff;
-
-  &__link {
-    @include inline-block-top;
-    vertical-align: baseline;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 18px;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: $dark-bg-color;
-    cursor: pointer;
-    border: 3px solid #ffffff;
-    border-radius: 30px;
-  }
-
-  &__link:hover {
-    color: $decoration-font-color;
-    background-color: #ffffff;
-  }
-
-  &__link:active {
-    color: rgba(210, 40, 86, 0.3);
-  }
-
-  &__wrapper p {
-    margin-top: 23px;
-    margin-bottom: 10px;
-    color: #ffffff;
-    font-weight: 300;
-    font-size: $basic-font-size;
-    line-height: 24px;
-  }
-
-  &__promo {
-  display: none;
-  }
-
-  &__option {
-    @include inline-block-top;
-    vertical-align: bottom;
-    margin-left: 14px;
-    margin-right: 14px;
-    margin-top: 28px;
-    width: 50px;
-    height: 60px;
-    font-size: 0;
-  }
-
-  &__option--ios {
-    background: url("../img/logo-apple.svg") no-repeat bottom;
-  }
-
-  &__option--android {
-    background: url("../img/logo-android.svg") no-repeat bottom;
-  }
-
-  &__option--windows {
-    background: url("../img/logo-microsoft.svg") no-repeat bottom;
-  }
 }
+
 .download-offer  .container {
   box-sizing: border-box;
 }
 
+.download-offer__link {
+  @include inline-block-top;
+  vertical-align: baseline;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: $dark-bg-color;
+  cursor: pointer;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+
+  &:hover {
+    color: $decoration-font-color;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+.download-offer__wrapper p {
+  margin-top: 23px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: $basic-font-size;
+  line-height: 24px;
+}
+
+.download-offer__promo {
+display: none;
+}
+
+.download-offer__option {
+  @include inline-block-top;
+  vertical-align: bottom;
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-top: 28px;
+  width: 50px;
+  height: 60px;
+  font-size: 0;
+
+  &--ios {
+    background: url("../img/logo-apple.svg") no-repeat bottom;
+  }
+
+  &--android {
+    background: url("../img/logo-android.svg") no-repeat bottom;
+  }
+
+  &--windows {
+    background: url("../img/logo-microsoft.svg") no-repeat bottom;
+  }
+}
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
 
@@ -82,76 +82,74 @@
     background: transparent;
     z-index: 100;
     margin-top: 63px;
+  }
 
-    &__option--android {
-      background: url("../img/logo-android.svg") no-repeat bottom;
-      opacity: 0.4;
-    }
+  .download-offer__option--android {
+    background: url("../img/logo-android.svg") no-repeat bottom;
+    opacity: 0.4;
+  }
 
-    &__promo {
-    display: inline;
-    font-size: $title-tablet-font-size;
-    font-weight: 300;
-    box-sizing: border-box;
-    text-align: center;
-    line-height: 1.25;
-    }
+  .download-offer__promo {
+  display: inline;
+  font-size: $title-tablet-font-size;
+  font-weight: 300;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 1.25;
+  }
 
-    &__wrapper p {
-      margin-top: 35px;
-      font-size: $basic-tablet-font-size;
-    }
+  .download-offer__wrapper p {
+    margin-top: 35px;
+    font-size: $basic-tablet-font-size;
+  }
 
-    &__options {
-      margin-top: 10px;
-    }
+  .download-offer__options {
+    margin-top: 10px;
+  }
 
-    &__wrapper {
-    width: 300px;
-    box-sizing: border-box;
-    }
+  .download-offer__wrapper {
+  width: 300px;
+  box-sizing: border-box;
+  }
 
-    &__link {
-      background: transparent;
-      margin-top: 30px;
-    }
+  .download-offer__link {
+    background: transparent;
+    margin-top: 30px;
   }
 }
 
 @media (min-width: $desktop-widths) {
+
   .download-offer {
     @include desktop-container;
     background: transparent;
     z-index: 100;
     margin-top: 80px;
-
-    &__wrapper {
-    width: 300px;
-    box-sizing: border-box;
-    }
-
-    &__link {
-      background: transparent;
-      margin-top: 50px;
-      font-size: 21px;
-      margin-bottom: 35px;
-    }
-
-    &__promo {
-    display: inline;
-    font-size: $title-desktop-font-size;
-    font-weight: 300;
-    box-sizing: border-box;
-    text-align: center;
-    line-height: 1.2;
-    }
-
-    &__wrapper p {
-      margin-top: 55px;
-      font-size: $basic-desktop-font-size;
-    }
-
-
   }
 
+  .download-offer__wrapper {
+  width: 300px;
+  box-sizing: border-box;
+  }
+
+  .download-offer__link {
+    background: transparent;
+    margin-top: 50px;
+    font-size: 21px;
+    margin-bottom: 35px;
+  }
+
+  .download-offer__promo {
+  display: inline;
+  font-size: $title-desktop-font-size;
+  font-weight: 300;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 1.2;
+  }
+
+  .download-offer__wrapper p {
+    margin-top: 55px;
+    font-size: $basic-desktop-font-size;
+  }
 }
