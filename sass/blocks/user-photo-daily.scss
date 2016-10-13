@@ -5,7 +5,10 @@
   font-family: $font-family;
   font-size: 0;
   position: relative;
+}
 
+.user-photo-daily__picture-wrapper {
+  position: relative;
   &::before {
     content: "Панорама дня";
     width: 140px;
@@ -25,58 +28,58 @@
     background: #d22856;
     z-index: 100;
   }
+}
 
-  &__info-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 280px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding-top: $default-padding;
-    padding-bottom: $default-padding;
-    padding-left: $default-padding;
-    padding-right: 5px;
-    background-color: #f2f2f2;
-  }
+.user-photo-daily__info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: $default-padding;
+  padding-bottom: $default-padding;
+  padding-left: $default-padding;
+  padding-right: 5px;
+  background-color: #f2f2f2;
+}
 
-  &__name {
-    font-size: $basic-font-size;
-    font-weight: 700;
-  }
+.user-photo-daily__name {
+  font-size: $basic-font-size;
+  font-weight: 700;
+}
 
-  &__time {
-    padding-left: 3px;
-    font-size: 12px;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
+.user-photo-daily__time {
+  padding-left: 3px;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
 
-  &__comment {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: $basic-font-size;
-    line-height: 24px;
-  }
+.user-photo-daily__comment {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: $basic-font-size;
+  line-height: 24px;
+}
 
-  & img {
-    height: 138%;
-    width: 100%;
-  }
+.user-photo-daily img {
+  height: 138%;
+  width: 100%;
+}
 
-  &__likes {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 30px;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: $decoration-font-color;
-    position: relative;
-    cursor: pointer;
-  }
+.user-photo-daily__likes {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $decoration-font-color;
+  position: relative;
+  cursor: pointer;
 
-  &__likes::before {
+  &::before {
     content: "";
     position: absolute;
     width: 15px;
@@ -97,49 +100,53 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    position: relative;
+  }
 
+  .user-photo-daily__picture-wrapper {
+    position: relative;
     &::before {
       top: 57px;
-      right: 10px;
+      right: 15px;
     }
+  }
 
-    &__info-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 620px;
-      box-sizing: border-box;
-      padding-top: 25px;
-      padding-left: 28px;
-    }
+  .user-photo-daily__info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 620px;
+    box-sizing: border-box;
+    padding-top: 25px;
+    padding-left: 28px;
+  }
 
-    &__title {
-      min-width: 300px;
-      order: -2;
-    }
+  .user-photo-daily__title {
+    min-width: 300px;
+    order: -2;
+  }
 
-    &__comment {
-      min-width: 500px;
-      padding: 0;
-    }
+  .user-photo-daily__comment {
+    min-width: 500px;
+    padding: 0;
+  }
 
-    & img {
-      height: 507px;
-      width: 100%;
-    }
+  .user-photo-daily img {
+    height: 507px;
+    width: 100%;
+  }
 
-    &__likes {
-      order: -1;
-      margin-left: auto;
-      min-width: 140px;
-      padding-left: 0;
-      padding-right: 20px;
-      box-sizing: border-box;
-      position: relative;
-    }
+  .user-photo-daily__likes {
+    order: -1;
+    margin-left: auto;
+    min-width: 140px;
+    padding-left: 0;
+    padding-right: 20px;
+    box-sizing: border-box;
+    position: relative;
 
-    &__likes::before {
+    &::before {
       top: 5px;
       left: 100px;
     }
@@ -155,40 +162,45 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    position: relative;
+  }
+
+  .user-photo-daily__picture-wrapper {
+    position: relative;
 
     &::before {
-      top: 55px;
+      top: 52px;
       right: 0;
     }
+  }
 
+  .user-photo-daily__info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+    width: 940px;
+    box-sizing: border-box;
+    padding-top: 25px;
+    padding-left: 25px;
+    font-size: 0;
+  }
 
-    &__info-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: flex-start;
-      margin-left: 0;
-      margin-right: 0;
-      width: 940px;
-      box-sizing: border-box;
-      padding-top: 25px;
-      padding-left: 25px;
-      font-size: 0;
-    }
+  .user-photo-daily__title {
+    min-width: 300px;
+    order: -2;
+  }
 
-    &__title {
-      min-width: 300px;
-      order: -2;
-    }
+  .user-photo-daily__likes {
+    order: -1;
+    margin-left: auto;
+    min-width: 150px;
+    padding-left: 0;
+    position: relative;
 
-    &__likes {
-      order: -1;
-      margin-left: auto;
-      min-width: 150px;
-      padding-left: 0;
-      position: relative;
-    }
-    &__likes::before {
+    &::before {
       content: "";
       position: absolute;
       width: 15px;
@@ -198,20 +210,21 @@
       background-repeat: no-repeat;
       z-index: 10;
     }
+  }
 
-    &__comment {
-      min-width: 700px;
-      padding: 0;
-    }
 
-    & img {
-      height: 507px;
-      width: 100%;
-    }
+  .user-photo-daily__comment {
+    min-width: 700px;
+    padding: 0;
+  }
 
-    &__likes::before {
-      top: 5px;
-      left: 105px;
-    }
+  .user-photo-daily img {
+    height: 507px;
+    width: 100%;
+  }
+
+  .user-photo-daily__likes::before {
+    top: 5px;
+    left: 105px;
   }
 }

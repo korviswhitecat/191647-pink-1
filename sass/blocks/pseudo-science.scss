@@ -10,19 +10,21 @@
   text-align: left;
   font-family: $font-family;
   display: none;
-  &__title {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    margin-top: 75px;
-    margin-bottom: 10px;
-    padding-right: 10px;
-  }
-  &__link {
-    @include inline-block-top;
-    margin-top: 7px;
-    color: $decoration-font-color;
-  }
+}
+
+.pseudo-science__title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  margin-top: 75px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+.pseudo-science__link {
+  @include inline-block-top;
+  margin-top: 7px;
+  color: $decoration-font-color;
 }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
@@ -30,11 +32,11 @@
     display: block
   }
 
-  .pseudo-science--wrapper {
+  .pseudo-science__wrapper {
     @include clearfix;
   }
 
-  .pseudo-science--timer-wrapper {
+  .pseudo-science__timer-wrapper {
     position: relative;
     margin-top: 40px;
     margin-left: 5px;
@@ -48,7 +50,7 @@
     text-align: center;
   }
 
-  .pseudo-science--timer-time {
+  .pseudo-science__timer-time {
     position: absolute;
     font-size: 96px;
     color: $decoration-font-color;
@@ -63,7 +65,7 @@
     left: 15px;
   }
 
-  .pseudo-science--content {
+  .pseudo-science__content-wrapper {
     float: right;
     width: 305px;
   }
@@ -75,18 +77,18 @@
     background-color: $extra-bg-color;
     padding-top: 0;
     padding-bottom: 60px;
-
-    &__content {
-      padding-top: 10px;
-      padding-bottom: 25px;
-    }
   }
 
-  .pseudo-science--wrapper {
+  .pseudo-science__content {
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+
+  .pseudo-science__wrapper {
     @include clearfix;
   }
 
-  .pseudo-science--timer-wrapper {
+  .pseudo-science__timer-wrapper {
     position: relative;
     margin-top: 40px;
     margin-left: 5px;
@@ -100,7 +102,7 @@
     text-align: center;
   }
 
-  .pseudo-science--timer-time {
+  .pseudo-science__timer-time {
     position: absolute;
     font-size: 120px;
     color: $decoration-font-color;
@@ -115,7 +117,7 @@
     left: 23px;
   }
 
-  .pseudo-science--content {
+  .pseudo-science__content-wrapper {
     float: right;
     width: 570px;
     padding-top: 55px;
