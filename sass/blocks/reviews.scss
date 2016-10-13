@@ -30,32 +30,31 @@
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .rewiews {
     padding-top: 50px;
+  }
 
-    &__item-additional {
-      display: block;
-      font-size: 14px;
-      line-height: 30px;
-    }
+  .rewiews__item-additional {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+  }
 
-    &__item-title {
-      font-size: 20px;
-      line-height: 30px;
-      margin-top: 20px;
-      padding-left: 5px;
-    }
+  .rewiews__item-title {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+    padding-left: 5px;
+  }
 
-    &__item-descr {
-      font-size: 18px;
-      line-height: 30px;
-      order: -4;
-    }
+  .rewiews__item-descr {
+    font-size: 18px;
+    line-height: 30px;
+    order: -4;
+  }
 
-    &__wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-    }
-
+  .rewiews__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
@@ -65,34 +64,33 @@
     background-repeat: no-repeat;
     background-position: center 80px;
     padding-top: 170px;
+  }
 
-    &__wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-    }
+  .rewiews__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 
-    &__item-additional {
-      display: block;
-      font-size: 18px;
-      line-height: 30px;
-    }
+  .rewiews__item-additional {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+  }
 
-    &__item-descr {
-      order: -4;
-      font-size: 18px;
-      line-height: 30px;
-      padding-left: 80px;
-      padding-right: 80px;
-      box-sizing: border-box;
+  .rewiews__item-descr {
+    order: -4;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    box-sizing: border-box;
+  }
 
-    }
-
-    &__item-title {
-      font-size: 24px;
-      line-height: 30px;
-      margin-top: 20px;
-      padding-left: 5px;
-    }
+  .rewiews__item-title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 20px;
+    padding-left: 5px;
   }
 }

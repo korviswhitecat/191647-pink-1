@@ -1,14 +1,14 @@
 .image-hand-block {
   min-height: 395px;
   position: relative;
+}
 
-  &__image {
-    position: absolute;
-    left: -20px;
-    bottom: 0;
-    width: 258px;
-    height: 286px;
-  }
+.image-hand-block__image {
+  position: absolute;
+  left: -20px;
+  bottom: 0;
+  width: 258px;
+  height: 286px;
 }
 
 @media (max-width: $tablet-widths) {
@@ -21,11 +21,10 @@
   .image-hand-block {
     position: absolute;
     left: -10px;
-    top: -34px;
+    top: 225px;
   }
 
-  &__image {
-    position: relative;
+  .image-hand-block__image {
     width: 700px;
     height: 545px;
   }
@@ -35,11 +34,10 @@
   .image-hand-block {
     position: absolute;
     left: 40px;
-    top: -15px;
+    top: 348px;
   }
 
-  &__image {
-    position: relative;
+  .image-hand-block__image {
     width: 1050px;
     height: 645px;
   }
