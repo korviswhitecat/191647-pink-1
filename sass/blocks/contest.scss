@@ -5,20 +5,21 @@
   padding-top: $default-padding;
   padding-bottom: 8px;
   box-sizing: border-box;
+}
 
-    &__descr {
-    padding-top: 10px;
-    padding-bottom: 0;
-    font-size: $basic-font-size;
-    line-height: 30px;
-    font-family: $font-family;
-    text-align: center;
-    background-color: $main-bg-color;
-    box-sizing: border-box;
-    color: $basic-font-color;
-  }
 
-  &__descr--additional {
+.contest__descr {
+  padding-top: 10px;
+  padding-bottom: 0;
+  font-size: $basic-font-size;
+  line-height: 30px;
+  font-family: $font-family;
+  text-align: center;
+  background-color: $main-bg-color;
+  box-sizing: border-box;
+  color: $basic-font-color;
+
+  &--additional {
     display: none;
   }
 }

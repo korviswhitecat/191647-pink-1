@@ -5,19 +5,20 @@
   padding-top: $default-padding;
   padding-bottom: $default-padding;
   box-sizing: border-box;
-  &__descr {
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-bottom: 15px;
-    font-size: $basic-font-size;
-    line-height: 30px;
-    font-family: $font-family;
-    text-align: center;
-    color: $basic-font-color;
-    background-color: $main-bg-color;
-    box-sizing: border-box;
-  }
+}
+
+.promo__descr {
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  font-size: $basic-font-size;
+  line-height: 30px;
+  font-family: $font-family;
+  text-align: center;
+  color: $basic-font-color;
+  background-color: $main-bg-color;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
