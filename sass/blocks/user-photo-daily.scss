@@ -5,6 +5,11 @@
   font-family: $font-family;
   font-size: 0;
   position: relative;
+
+  & img {
+    height: 138%;
+    width: 100%;
+  }
 }
 
 .user-photo-daily__picture-wrapper {
@@ -64,11 +69,6 @@
   line-height: 24px;
 }
 
-.user-photo-daily img {
-  height: 138%;
-  width: 100%;
-}
-
 .user-photo-daily__likes {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -101,6 +101,11 @@
     align-items: center;
     margin-bottom: 50px;
     position: relative;
+
+    & img {
+      height: 507px;
+      width: 100%;
+    }
   }
 
   .user-photo-daily__picture-wrapper {
@@ -132,11 +137,6 @@
     padding: 0;
   }
 
-  .user-photo-daily img {
-    height: 507px;
-    width: 100%;
-  }
-
   .user-photo-daily__likes {
     order: -1;
     margin-left: auto;
@@ -163,6 +163,11 @@
     align-items: center;
     margin-bottom: 50px;
     position: relative;
+
+    & img {
+      height: 507px;
+      width: 100%;
+    }
   }
 
   .user-photo-daily__picture-wrapper {
@@ -209,22 +214,13 @@
       background-position: center;
       background-repeat: no-repeat;
       z-index: 10;
+      top: 5px;
+      left: 105px;
     }
   }
-
 
   .user-photo-daily__comment {
     min-width: 700px;
     padding: 0;
-  }
-
-  .user-photo-daily img {
-    height: 507px;
-    width: 100%;
-  }
-
-  .user-photo-daily__likes::before {
-    top: 5px;
-    left: 105px;
   }
 }

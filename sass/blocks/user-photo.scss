@@ -5,6 +5,10 @@
   font-weight: normal;
   font-family: $font-family;
   background-color: #f2f2f2;
+
+  & {
+    width: 100%;
+  }
 }
 
 .user-photo__info-wrapper {
@@ -63,10 +67,6 @@
   }
 }
 
-.user-photo img {
-  width: 100%;
-}
-
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .user-photo {
@@ -75,6 +75,10 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-content: stretch;
+
+    & {
+      min-height: 300px;
+    }
   }
 
   .user-photo__likes {
@@ -96,10 +100,6 @@
   .user-photo__comment {
     min-height: 50px;
   }
-
-  .user-photo img {
-    min-height: 300px;
-  }
 }
 
 
@@ -111,6 +111,10 @@
     flex-direction: column;
     align-content: stretch;
     margin-bottom: 55px;
+
+    & img {
+      min-height: 400px;
+    }
   }
 
   .user-photo__likes {
@@ -131,8 +135,5 @@
 
   .user-photo__comment {
     min-height: 50px;
-  }
-  .user-photo img {
-    min-height: 400px;
   }
 }

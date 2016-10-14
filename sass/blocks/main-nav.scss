@@ -52,16 +52,16 @@
     background-color: #283645;;
     border-top: 1px solid #485461;
     border-bottom: 1px solid #000;
+
+    &:hover {
+      color: #d22856;
+    }
+
+    &:active {
+      color: #d22856;
+      opacity: 0.3;
+    }
   }
-}
-
-.main-nav__item a:hover {
-  color: #d22856;
-}
-
-.main-nav__item a:active {
-  color: #d22856;
-  opacity: 0.3;
 }
 
 .main-nav  svg:first-child {
@@ -81,19 +81,19 @@
 .main-nav  svg {
   float: right;
   fill: #fff;
-}
 
-.main-nav  svg:hover {
-  fill: #d22856;
-}
+  &:hover {
+    fill: #d22856;
+  }
 
-.main-nav  svg:active {
-  fill: #d22856;
-  opacity: 0.3;
+  &:active {
+    fill: #d22856;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
-  
+
   .main-nav__toggler {
     margin: 41px 10px;
   }
@@ -129,35 +129,36 @@
    background-color: transparent;
    border: none;
    padding: 0;
+
+   &:active {
+     color: #fff;
+     opacity: 0.3;
+   }
+
+   &:last-child {
+     margin-right: 0;
+   }
+
+   &::before {
+     content: "";
+     position: absolute;
+     width: 100%;
+     bottom: -20px;
+     height: 2px;
+     background-color: #fff;
+   }
+
+   &:hover::before {
+     background-color: #d22856;
+   }
+
+   &:active::before {
+     background-color: #fff;
+     opacity: 0.3;
+   }
   }
 
-  .main-nav__item a:active {
-    color: #fff;
-    opacity: 0.3;
-  }
-
-  .main-nav__item a:last-child {
-    margin-right: 0;
-  }
   .main-nav__item--active {
     position: relative;
-  }
-
-  .main-nav__item--active a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: -20px;
-    height: 2px;
-    background-color: #fff;
-  }
-
-  .main-nav__item--active a:hover::before {
-    background-color: #d22856;
-  }
-
-  .main-nav__item--active a:active::before {
-    background-color: #fff;
-    opacity: 0.3;
   }
 }

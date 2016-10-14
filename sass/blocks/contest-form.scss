@@ -53,11 +53,11 @@
 
 
 .contest-form__os-checker  label {
- margin-top: 25px;
-}
+  margin-top: 25px;
 
-.contest-form__os-checker  label:nth-child(2) {
- margin-top: 22px;
+  &:nth-child(2) {
+    margin-top: 22px;
+  }
 }
 
 .contest-form__os-title {
@@ -70,6 +70,7 @@
   padding-left: 0;
   padding-right: 0;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .contest-form__legend {
@@ -78,10 +79,6 @@
   font-size: $legend-font-size;
   padding-left: 22px;
   text-transform: uppercase;
-}
-
-.contest-form__user-review {
-  text-align: center;
 }
 
 .contest-form__user-contacts-legend,
@@ -99,54 +96,12 @@
   display: none;
 }
 
-.contest-form  input[type="email"],
-.contest-form  input[type="text"],
-.contest-form  input[type="tel"] {
-  color: $basic-font-color;
-  font-size: $form-options-font-size;
-  line-height: 30px;
-  font-weight: 400;
-  font-family: $font-family;
-  border: $field-border;
-  border-radius: $field-border-radius;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 22px;
-  padding-right: 24px;
-  margin-bottom: 20px;
-  width: 100%;
-  box-sizing: border-box;
-  outline: none;
-}
-
 .contest-form  input[type="text"] {
   margin-top: 7px;
-}
 
-.contest-form  input[type="text"]:last-child {
-  margin-top: 13px;
-}
-
-.contest-form  input[type="tel"] {
-  margin-top: 10px;
-}
-
-.contest-form  input[type="email"] {
-  margin-top: 9px;
-}
-
-.contest-form  input[type="email"]:hover,
-.contest-form  input[type="text"]:hover,
-.contest-form  input[type="tel"]:hover,
-.contest-form  textarea[name="review"]:hover {
-  border: $field-hover-border;
-}
-
-.contest-form  input[type="email"]:focus,
-.contest-form  input[type="text"]:focus,
-.contest-form  input[type="tel"]:focus,
-.contest-form  textarea[name="review"]:focus {
-  border: $field-active-border;
+  &:last-child {
+    margin-top: 13px;
+  }
 }
 
 .contest-form  input[type="email"],
@@ -167,15 +122,23 @@
   width: 100%;
   box-sizing: border-box;
   outline: none;
+
+  &:hover {
+      border: $field-hover-border;
+  }
+
+  &:focus {
+    border: $field-active-border;
+  }
 }
 
 .contest-form  input[type="text"] {
   margin-top: 7px;
-}
 
-.contest-form  input[type="text"]:last-child {
-  margin-top: 13px;
-  margin-bottom: 20px;
+  &:last-child {
+    margin-top: 13px;
+    margin-bottom: 20px;
+  }
 }
 
 .contest-form  input[type="tel"] {
@@ -184,20 +147,6 @@
 
 .contest-form  input[type="email"] {
   margin-top: 9px;
-}
-
-.contest-form  input[type="email"]:hover,
-.contest-form  input[type="text"]:hover,
-.contest-form  input[type="tel"]:hover,
-.contest-form  textarea[name="review"]:hover {
-  border: $field-hover-border;
-}
-
-.contest-form  input[type="email"]:focus,
-.contest-form  input[type="text"]:focus,
-.contest-form  input[type="tel"]:focus,
-.contest-form  textarea[name="review"]:focus {
-  border: $field-active-border;
 }
 
 .contest-form  input::-webkit-input-placeholder {
@@ -236,18 +185,17 @@
   font-family: $font-family;
   text-align: center;
   outline: none;
+
+  &:hover {
+    border: $field-hover-border;
+  }
+  &:focus {
+    border: $field-active-border;
+  }
 }
 
+.contest-form  textarea:-moz-placeholder,
 .contest-form  textarea::-webkit-input-placeholder {
-  color: $basic-font-color;
-  font-size: $form-options-font-size;
-  line-height: 32px;
-  font-weight: 400;
-  font-family: $font-family;
-  text-align: center;
-}
-
-.contest-form  textarea:-moz-placeholder {
   color: $basic-font-color;
   font-size: $form-options-font-size;
   line-height: 32px;
@@ -264,40 +212,33 @@
   cursor: pointer;
   padding-left: 70px;
   font-size: $form-options-font-size;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -8px;
+    width: 35px;
+    height: 35px;
+    background: $main-bg-color;
+    border: $field-border;
+  }
+
+  &:hover::before {
+    border: $field-hover-border;
+  }
+
+  &:active::before {
+    border: $field-active-border;
+  }
 }
 
 .contest-form__os-checker  label::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 35px;
-  height: 35px;
-  background: $main-bg-color;
-  border: $field-border;
   border-radius: 50%;
 }
 
 .contest-form__user-achievements  label::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: -8px;
-  width: 35px;
-  height: 35px;
-  background: $main-bg-color;
-  border: $field-border;
   border-radius: $field-border-radius;
-}
-
-.contest-form__user-achievements label:hover::before,
-.contest-form__os-checker label:hover::before {
-  border: $field-hover-border;
-}
-
-.contest-form__user-achievements  label:active::before,
-.contest-form__os-checker  label:active::before {
-  border: $field-active-border;
 }
 
 .contest-form__os-checker  input[type="radio"]:checked + label::after {
@@ -311,7 +252,7 @@
   border-radius: 50%;
 }
 
-.contest-form__user-achievements  input[type="checkbox"]:checked + label::after {
+.contest-form__user-achievements   input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
   top: 1px;
@@ -403,24 +344,24 @@ legend {
     box-sizing: border-box;
     width: 565px;
     margin-bottom: 35px;
-  }
 
-  .contest-form__user-details  input[type="text"]:nth-child(2) {
-    margin-bottom: 47px;
-    width: 525px;
-  }
+    &:nth-child(2) {
+      margin-bottom: 47px;
+      width: 525px;
+    }
 
-  .contest-form__user-details  input[type="text"]:nth-child(6) {
-    margin-bottom: 15px;
-    width: 525px;
+    &:nth-child(6) {
+      margin-bottom: 15px;
+      width: 525px;
+    }
   }
 
   .contest-form__user-details  label {
     margin-bottom: 35px;
-  }
 
-  .contest-form__user-details  label:nth-child(5) {
-    margin-bottom: 5px;
+    &:nth-child(5) {
+      margin-bottom: 5px;
+    }
   }
 
   .contest-form__os-checker {
@@ -476,37 +417,37 @@ legend {
 
   .contest-form__field--mobile {
     position: relative;
-  }
 
-  .contest-form__field--mobile::before {
-    position: absolute;
-    content: "";
-    right: 2px;
-    top: -77px;
-    width: 60px;
-    height: 60px;
-    background-color: #e5e5e5;
-    background-image: url("../img/icon-phone.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+    &::before {
+      position: absolute;
+      content: "";
+      right: 2px;
+      top: -77px;
+      width: 60px;
+      height: 60px;
+      background-color: #e5e5e5;
+      background-image: url("../img/icon-phone.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 
   .contest-form__field--email {
     position: relative;
-  }
 
-  .contest-form__field--email::before {
-    position: absolute;
-    content: "";
-    right: 2px;
-    top: -77px;
-    width: 60px;
-    height: 60px;
-    background-color: #e5e5e5;
-    background-image: url("../img/icon-mail.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 50;
+    &::before {
+      position: absolute;
+      content: "";
+      right: 2px;
+      top: -77px;
+      width: 60px;
+      height: 60px;
+      background-color: #e5e5e5;
+      background-image: url("../img/icon-mail.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 50;
+    }
   }
 
   .contest-form__user-contacts  fieldset {
@@ -671,59 +612,60 @@ legend {
     box-sizing: border-box;
     width: 380px;
     margin-bottom: 35px;
+
+    &:nth-child(2) {
+      margin-bottom: 45px;
+      width: 340px;
+    }
+
+    &:nth-child(6) {
+      margin-bottom: 30px;
+      width: 340px;
+    }
   }
 
-  .contest-form__user-details  input[type="text"]:nth-child(2) {
-    margin-bottom: 45px;
-    width: 340px;
-  }
-
-  .contest-form__user-details  input[type="text"]:nth-child(6) {
-    margin-bottom: 30px;
-    width: 340px;
-  }
 
   .contest-form__user-details  label {
     margin-bottom: 35px;
-  }
 
-  .contest-form__user-details  label:nth-child(5) {
-    margin-bottom: 18px;
+    &:nth-child(5) {
+      margin-bottom: 18px;
+    }
   }
 
   .contest-form__field--mobile {
     position: relative;
-  }
 
-  .contest-form__field--mobile::before {
-    position: absolute;
-    content: "";
-    right: -43px;
-    top: -75px;
-    width: 60px;
-    height: 60px;
-    background-color: #e5e5e5;
-    background-image: url("../img/icon-phone.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+    &::before {
+      position: absolute;
+      content: "";
+      right: -43px;
+      top: -75px;
+      width: 60px;
+      height: 60px;
+      background-color: #e5e5e5;
+      background-image: url("../img/icon-phone.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 
   .contest-form__field--email {
     position: relative;
-  }
 
-  .contest-form__field--email::before {
-    position: absolute;
-    content: "";
-    right: 2px;
-    top: -75px;
-    width: 60px;
-    height: 60px;
-    background-color: #e5e5e5;
-    background-image: url("../img/icon-mail.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 50;
+    &::before {
+      position: absolute;
+      content: "";
+      right: 2px;
+      top: -75px;
+      width: 60px;
+      height: 60px;
+      background-color: #e5e5e5;
+      background-image: url("../img/icon-mail.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 50;
+    }
   }
 
   .contest-form  input[type="email"],
@@ -865,6 +807,18 @@ legend {
     width: 260px;
     margin-left: 51px;
     box-sizing: border-box;
+
+    &:first-child {
+      order: -6;
+    }
+
+    &:nth-child(3) {
+      order: -5;
+    }
+
+    &:nth-child(5) {
+      order: -4;
+    }
   }
 
   .contest-form__user-achievements  label {
@@ -881,18 +835,6 @@ legend {
     margin-top: 5px;
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .contest-form__user-achievements  li:first-child {
-    order: -6;
-  }
-
-  .contest-form__user-achievements  li:nth-child(3) {
-    order: -5;
-  }
-
-  .contest-form__user-achievements  li:nth-child(5) {
-    order: -4;
   }
 
   .contest-form__user-review  .container {

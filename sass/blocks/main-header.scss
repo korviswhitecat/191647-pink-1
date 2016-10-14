@@ -42,11 +42,11 @@
   font-weight: 300;
   line-height: 1.25;
   box-sizing: border-box;
-}
 
-.main-header__title--photo {
-  padding-top: 30px;
-  padding-bottom: 80px;
+  &--photo {
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
 }
 
 .main-header__index {

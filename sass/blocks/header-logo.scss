@@ -11,10 +11,10 @@
   margin-top: 20px;
   width: 79px;
   height: 26px;
-}
 
-.header-logo__link:active {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {

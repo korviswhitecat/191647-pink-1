@@ -36,14 +36,15 @@
 .main-footer__img {
   width: 27px;
   height: 35px;
-}
-.main-footer__img:hover {
-  fill: #283645;
-}
 
-.main-footer__img:active {
-  fill: #283645;
-  opacity: 0.3;
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    fill: #283645;
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: $tablet-widths) {
@@ -86,6 +87,10 @@
     padding-bottom: 45px;
     box-sizing: border-box;
     margin-bottom: 0;
+
+    &--hidden {
+      padding-top: 50px;
+    }
   }
 
   .main-footer__copyright {
@@ -95,9 +100,5 @@
 
   .main-footer__developer {
     font-size: $basic-desktop-font-size;
-  }
-
-  .main-footer--hidden {
-    padding-top: 50px;
   }
 }

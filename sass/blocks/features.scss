@@ -21,11 +21,11 @@ display: none;
 .features__item p {
   margin-top: 10px;
   margin-bottom: 30px;
-}
 
-.features__item p:last-child {
-  margin-top: 12px;
-  margin-bottom: 30px;
+  &:last-child {
+    margin-top: 12px;
+    margin-bottom: 30px;
+  }
 }
 
 .features__item-title {

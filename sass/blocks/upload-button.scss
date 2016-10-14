@@ -47,10 +47,10 @@
   .upload-button {
     width: 260px;
     margin: 0;
-  }
 
-  .upload-button:last-child {
-    margin-top: 20px;
+    &:last-child {
+      margin-top: 20px;
+    }
   }
 }
 
